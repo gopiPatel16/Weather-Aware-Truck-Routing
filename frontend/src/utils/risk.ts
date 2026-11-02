@@ -59,8 +59,6 @@ export const RISK_STYLES: Record<RiskLevel, RiskStyle> = {
   },
 };
 
-export const riskLabel = (level: RiskLevel): string => RISK_STYLES[level].label;
-
 /** Heat-layer weight per level (PLAN §6). Unknown contributes nothing — it is drawn as a hollow dot instead. */
 export const HEAT_WEIGHTS: Record<RiskLevel, number> = {
   low: 0.1,
@@ -81,11 +79,6 @@ export function levelFromCode(code: number): RiskLevel {
 }
 
 export const heatWeightForCode = (code: number): number => HEAT_WEIGHTS[levelFromCode(code)];
-
-export const REASON_TEXT = {
-  no_travel: 'Has No Travel conditions',
-  incomplete_weather: 'Weather forecast incomplete',
-} as const;
 
 export const ROUTE_COLORS = ['#1d4ed8', '#0e7490', '#a21caf', '#4d7c0f'] as const;
 export const routeColor = (index: number): string => ROUTE_COLORS[index % ROUTE_COLORS.length] ?? '#1d4ed8';

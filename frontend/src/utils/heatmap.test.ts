@@ -8,8 +8,8 @@ import {
   toFeatureCollection,
   unknownOpacityExpression,
   weightExpression,
-  weightForCode,
 } from './heatmap';
+import { heatWeightForCode } from './risk';
 import { etaHourOffset, nowInZone, departureWindow, nextFullHour } from './time';
 
 describe('heatmap decoding', () => {
@@ -45,7 +45,7 @@ describe('heatmap decoding', () => {
 
 describe('heatmap weights', () => {
   it('maps level codes to the PLAN §6 weights', () => {
-    expect([0, 1, 2, 3, 4, 9].map(weightForCode)).toEqual([0.1, 0.3, 0.5, 0.75, 1, 0]);
+    expect([0, 1, 2, 3, 4, 9].map(heatWeightForCode)).toEqual([0.1, 0.3, 0.5, 0.75, 1, 0]);
   });
 
   it('builds a per-hour match expression whose fallback (Unknown) is weight 0', () => {

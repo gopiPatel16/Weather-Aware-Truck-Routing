@@ -47,11 +47,6 @@ export function decodeHeatmap(resp: HeatmapResponse): HeatmapData {
 
 export const hourProp = (hour: number): string => `h${hour}`;
 
-/** Weight a heat cell contributes for a level code (Unknown → 0). */
-export function weightForCode(code: number): number {
-  return HEAT_WEIGHTS[levelFromCode(code)];
-}
-
 /** MapLibre `match` expression turning the per-hour level property into a heat weight. */
 export function weightExpression(hour: number) {
   const get = ['get', hourProp(hour)];

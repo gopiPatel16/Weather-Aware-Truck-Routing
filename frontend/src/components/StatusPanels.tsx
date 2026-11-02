@@ -101,6 +101,8 @@ const TITLES: Record<string, string> = {
   network_error: 'Could not reach the server',
 };
 
+const waitText = (s: number): string => (s >= 120 ? `${Math.round(s / 60)} minutes` : `${s} seconds`);
+
 export function ErrorPanel({ error, onRetry }: { error: ApiError; onRetry: () => void }) {
   const retryable = error.isTransient || error.code === 'rate_limited';
   return (
@@ -118,7 +120,7 @@ export function ErrorPanel({ error, onRetry }: { error: ApiError; onRetry: () =>
           )}
         </ul>
       ) : null}
-      {error.retryAfterS ? <p className="mt-1">Try again in about {error.retryAfterS} seconds.</p> : null}
+      {error.retryAfterS ? <p className="mt-1">Try again in about {waitText(error.retryAfterS)}.</p> : null}
       {error.isTransient ? (
         <p className="mt-1">The server may be starting up. Automatic retries have been used up.</p>
       ) : null}

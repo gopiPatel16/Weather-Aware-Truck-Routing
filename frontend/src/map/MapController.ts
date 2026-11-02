@@ -134,7 +134,6 @@ export class MapController {
   private pendingHour = 0;
   private appliedHour = -1;
   private raf = 0;
-  private heatVisible = true;
 
   constructor(init: MapInit) {
     this.ml = init.maplibre;
@@ -547,7 +546,6 @@ export class MapController {
   }
 
   setHeatVisible(visible: boolean): void {
-    this.heatVisible = visible;
     this.whenReady(() => {
       const v = visible ? 'visible' : 'none';
       this.map.setLayoutProperty(LAYER.heat, 'visibility', v);
@@ -582,10 +580,6 @@ export class MapController {
 
   resize(): void {
     this.map.resize();
-  }
-
-  get isHeatVisible(): boolean {
-    return this.heatVisible;
   }
 
   destroy(): void {

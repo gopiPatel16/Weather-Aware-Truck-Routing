@@ -4,7 +4,6 @@ const nf2 = new Intl.NumberFormat('en-US', { minimumFractionDigits: 2, maximumFr
 
 export const formatMiles = (mi: number): string => `${nf0.format(mi)} mi`;
 export const formatMilesPrecise = (mi: number): string => `${nf1.format(mi)} mi`;
-export const formatLb = (lb: number): string => `${nf0.format(lb)} lb`;
 export const formatPercent = (pct: number): string => `${nf1.format(pct)}%`;
 
 /** 60 120 s → "16 h 42 min"; under an hour → "45 min". */
@@ -75,5 +74,3 @@ export const formatTimeInZone = (iso: string | Date, tz: string): string =>
 
 /** Offset of a slider hour from departure: "+6 h". */
 export const formatHourOffset = (h: number): string => (h === 0 ? 'Departure' : `+${h} h`);
-
-export const lbToThousands = (lb: number): string => `${nf0.format(lb / 1000)}k`;
