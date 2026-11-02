@@ -1,0 +1,18 @@
+{
+ "routes": [
+  {
+   "id": "A",
+   "polyline": "cir~FfezuObw`Lbv}hB"
+  },
+  {
+   "id": "B",
+   "polyline": "cir~FfezuOkm\\tmqDeqT~}fCgvPb~uBocNdnmBqoFpnz@k`Er~q@usDr~q@efDr~q@uwCr~q@shCr~q@sxBr~q@swAtni@syAr~q@ugAr~q@eu@r~q@u]tni@{Qr~q@Otni@bQr~q@|]tni@nw@r~q@j~@tni@z~Ar~q@r_Btni@dgCr~q@jaCtni@xpCtni@h`Dvni@xoDtni@h_Etni@vnEtni@plGr~q@npFtni@vtHr~q@rqGtni@b|Ir~q@~qHtni@jbKr~q@hqItni@fgLr~q@hoJtni@ljMr~q@v|Mr~q@pnNr~q@`iLtni@jmOr~q@d}Or~q@flPr~q@nzPr~q@|gQr~q@ntQr~q@vfUpnz@bni@dnmBfcn@b~uBhtr@`n~BplhAtmqD"
+  },
+  {
+   "id": "C",
+   "polyline": "cir~FfezuOplhAtmqDhav@~}fCj`n@b~uBpji@dnmBrdUpnz@lrQr~q@veQr~q@dxPr~q@xiPr~q@rzOr~q@tjOr~q@tfLtni@rkNr~q@vyMr~q@fgMr~q@tlJtni@|cLr~q@pnItni@|~Jr~q@`oHtni@rxIr~q@rnGtni@bqHr~q@lmFtni@zhGr~q@tkEtni@d|Dtni@vlDvni@d}Ctni@vmCtni@h~Btni@lcCr~q@p|Atni@h{Ar~q@l{@tni@zs@r~q@`[tni@tMr~q@gBtni@eUr~q@i`@tni@kx@r~q@y|@tni@syAr~q@swAtni@sxBr~q@shCr~q@uwCr~q@efDr~q@usDr~q@k`Er~q@qoFpnz@}xEr~q@qiGpnz@gvPb~uBeqT~}fCkm\\tmqD"
+  }
+ ],
+ "departure_utc": "2026-11-02T12:00:00Z",
+ "cargo_weight_lb": 42000
+}

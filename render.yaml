@@ -1,0 +1,16 @@
+# Render blueprint. Secrets (TOMTOM_API_KEY) are set in the dashboard, never committed.
+services:
+  - type: web
+    name: weather-aware-truck-routing
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health/
+    envVars:
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DJANGO_ALLOWED_HOSTS
+        value: .onrender.com
+      - key: WEATHER_PROVIDER
+        value: open_meteo
+      - key: TOMTOM_API_KEY
+        sync: false

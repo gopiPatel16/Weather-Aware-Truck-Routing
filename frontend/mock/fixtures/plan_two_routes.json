@@ -1,0 +1,4140 @@
+{
+ "request": {
+  "origin_timezone": "America/Chicago",
+  "departure_local": "2026-11-02T06:00:00-06:00",
+  "departure_utc": "2026-11-02T12:00:00Z",
+  "interval_miles": 25,
+  "requested_interval_miles": 25,
+  "interval_adjusted": false,
+  "cargo_weight_lb": 42000,
+  "warnings": []
+ },
+ "alternatives": {
+  "requested": 3,
+  "returned": 2,
+  "usable": 2,
+  "message": "The routing provider returned 2 valid alternatives for this trip."
+ },
+ "routes": [
+  {
+   "id": "A",
+   "name": "Route A",
+   "via": "I-80 W",
+   "distance_mi": 919.8,
+   "duration_s": 53407,
+   "arrival_utc": "2026-11-03T02:50:07Z",
+   "arrival_tz": "America/Denver",
+   "eta_method": "route_guidance",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.6298,
+      41.8781
+     ],
+     [
+      -104.9903,
+      39.7392
+     ]
+    ]
+   },
+   "polyline": "cir~FfezuObw`Lbv}hB",
+   "segments": [
+    {
+     "from_mi": 0.0,
+     "to_mi": 637.5,
+     "level": "low",
+     "coordinates": [
+      [
+       -87.6298,
+       41.8781
+      ],
+      [
+       -99.66221,
+       40.39565
+      ]
+     ]
+    },
+    {
+     "from_mi": 637.5,
+     "to_mi": 662.5,
+     "level": "moderate",
+     "coordinates": [
+      [
+       -99.66221,
+       40.39565
+      ],
+      [
+       -100.13407,
+       40.33751
+      ]
+     ]
+    },
+    {
+     "from_mi": 662.5,
+     "to_mi": 687.5,
+     "level": "high",
+     "coordinates": [
+      [
+       -100.13407,
+       40.33751
+      ],
+      [
+       -100.60592,
+       40.27938
+      ]
+     ]
+    },
+    {
+     "from_mi": 687.5,
+     "to_mi": 762.5,
+     "level": "severe",
+     "coordinates": [
+      [
+       -100.60592,
+       40.27938
+      ],
+      [
+       -102.0215,
+       40.10497
+      ]
+     ]
+    },
+    {
+     "from_mi": 762.5,
+     "to_mi": 787.5,
+     "level": "moderate",
+     "coordinates": [
+      [
+       -102.0215,
+       40.10497
+      ],
+      [
+       -102.49336,
+       40.04684
+      ]
+     ]
+    },
+    {
+     "from_mi": 787.5,
+     "to_mi": 919.8,
+     "level": "low",
+     "coordinates": [
+      [
+       -102.49336,
+       40.04684
+      ],
+      [
+       -104.9903,
+       39.7392
+      ]
+     ]
+    }
+   ],
+   "summary": {
+    "miles_by_level": {
+     "low": 769.8,
+     "moderate": 50.0,
+     "high": 25.0,
+     "severe": 75.0,
+     "no_travel": 0.0,
+     "unknown": 0.0
+    },
+    "coverage_pct": 100.0,
+    "no_travel_mi": 0.0,
+    "severe_mi": 75.0,
+    "high_mi": 25.0,
+    "avg_risk": 0.35,
+    "max_level": "severe",
+    "checkpoint_count": 38
+   },
+   "eligibility": {
+    "eligible": true,
+    "reasons": []
+   },
+   "checkpoints": [
+    {
+     "i": 0,
+     "mile": 0.0,
+     "lat": 41.8781,
+     "lon": -87.6298,
+     "eta_utc": "2026-11-02T12:00:00Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T12:00:00Z",
+         "2026-11-02T13:00:00Z"
+        ],
+        [
+         "2026-11-02T11:00:00Z",
+         "2026-11-02T12:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T12:00:00Z",
+        "2026-11-02T13:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 1,
+     "mile": 25,
+     "lat": 41.81906,
+     "lon": -88.10902,
+     "eta_utc": "2026-11-02T12:18:52Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T12:00:00Z",
+         "2026-11-02T13:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T12:00:00Z",
+        "2026-11-02T13:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 2,
+     "mile": 50,
+     "lat": 41.76007,
+     "lon": -88.58782,
+     "eta_utc": "2026-11-02T12:37:44Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T12:00:00Z",
+         "2026-11-02T13:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T12:00:00Z",
+        "2026-11-02T13:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 3,
+     "mile": 75,
+     "lat": 41.70113,
+     "lon": -89.06619,
+     "eta_utc": "2026-11-02T12:56:36Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T12:00:00Z",
+         "2026-11-02T13:00:00Z"
+        ],
+        [
+         "2026-11-02T13:00:00Z",
+         "2026-11-02T14:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T12:00:00Z",
+        "2026-11-02T13:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 4,
+     "mile": 100,
+     "lat": 41.64225,
+     "lon": -89.54413,
+     "eta_utc": "2026-11-02T13:18:00Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T13:00:00Z",
+         "2026-11-02T14:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T13:00:00Z",
+        "2026-11-02T14:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 5,
+     "mile": 125,
+     "lat": 41.58341,
+     "lon": -90.02164,
+     "eta_utc": "2026-11-02T13:39:35Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T13:00:00Z",
+         "2026-11-02T14:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T13:00:00Z",
+        "2026-11-02T14:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 6,
+     "mile": 150,
+     "lat": 41.52463,
+     "lon": -90.49873,
+     "eta_utc": "2026-11-02T14:01:10Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T14:00:00Z",
+         "2026-11-02T15:00:00Z"
+        ],
+        [
+         "2026-11-02T13:00:00Z",
+         "2026-11-02T14:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T14:00:00Z",
+        "2026-11-02T15:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 7,
+     "mile": 175,
+     "lat": 41.46591,
+     "lon": -90.9754,
+     "eta_utc": "2026-11-02T14:23:45Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T14:00:00Z",
+         "2026-11-02T15:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T14:00:00Z",
+        "2026-11-02T15:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 8,
+     "mile": 200,
+     "lat": 41.40723,
+     "lon": -91.45165,
+     "eta_utc": "2026-11-02T14:46:29Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T14:00:00Z",
+         "2026-11-02T15:00:00Z"
+        ],
+        [
+         "2026-11-02T15:00:00Z",
+         "2026-11-02T16:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T14:00:00Z",
+        "2026-11-02T15:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 9,
+     "mile": 225,
+     "lat": 41.3486,
+     "lon": -91.92748,
+     "eta_utc": "2026-11-02T15:09:13Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T15:00:00Z",
+         "2026-11-02T16:00:00Z"
+        ],
+        [
+         "2026-11-02T14:00:00Z",
+         "2026-11-02T15:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T15:00:00Z",
+        "2026-11-02T16:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 10,
+     "mile": 250,
+     "lat": 41.29003,
+     "lon": -92.4029,
+     "eta_utc": "2026-11-02T15:32:35Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T15:00:00Z",
+         "2026-11-02T16:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T15:00:00Z",
+        "2026-11-02T16:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 11,
+     "mile": 275,
+     "lat": 41.23151,
+     "lon": -92.8779,
+     "eta_utc": "2026-11-02T15:56:06Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T15:00:00Z",
+         "2026-11-02T16:00:00Z"
+        ],
+        [
+         "2026-11-02T16:00:00Z",
+         "2026-11-02T17:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T15:00:00Z",
+        "2026-11-02T16:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 12,
+     "mile": 300,
+     "lat": 41.17304,
+     "lon": -93.35249,
+     "eta_utc": "2026-11-02T16:19:37Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T16:00:00Z",
+         "2026-11-02T17:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T16:00:00Z",
+        "2026-11-02T17:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 13,
+     "mile": 325,
+     "lat": 41.11462,
+     "lon": -93.82666,
+     "eta_utc": "2026-11-02T16:43:35Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T16:00:00Z",
+         "2026-11-02T17:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T16:00:00Z",
+        "2026-11-02T17:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 14,
+     "mile": 350,
+     "lat": 41.05625,
+     "lon": -94.30042,
+     "eta_utc": "2026-11-02T17:07:42Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T17:00:00Z",
+         "2026-11-02T18:00:00Z"
+        ],
+        [
+         "2026-11-02T16:00:00Z",
+         "2026-11-02T17:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T17:00:00Z",
+        "2026-11-02T18:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 15,
+     "mile": 375,
+     "lat": 40.99793,
+     "lon": -94.77378,
+     "eta_utc": "2026-11-02T17:31:50Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T17:00:00Z",
+         "2026-11-02T18:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T17:00:00Z",
+        "2026-11-02T18:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 16,
+     "mile": 400,
+     "lat": 40.93966,
+     "lon": -95.24672,
+     "eta_utc": "2026-11-02T17:56:17Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T17:00:00Z",
+         "2026-11-02T18:00:00Z"
+        ],
+        [
+         "2026-11-02T18:00:00Z",
+         "2026-11-02T19:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T17:00:00Z",
+        "2026-11-02T18:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 17,
+     "mile": 425,
+     "lat": 40.88144,
+     "lon": -95.71926,
+     "eta_utc": "2026-11-02T18:20:54Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T18:00:00Z",
+         "2026-11-02T19:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T18:00:00Z",
+        "2026-11-02T19:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 18,
+     "mile": 450,
+     "lat": 40.82327,
+     "lon": -96.1914,
+     "eta_utc": "2026-11-02T18:45:30Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T18:00:00Z",
+         "2026-11-02T19:00:00Z"
+        ],
+        [
+         "2026-11-02T19:00:00Z",
+         "2026-11-02T20:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T18:00:00Z",
+        "2026-11-02T19:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 19,
+     "mile": 475,
+     "lat": 40.76515,
+     "lon": -96.66313,
+     "eta_utc": "2026-11-02T19:10:22Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T19:00:00Z",
+         "2026-11-02T20:00:00Z"
+        ],
+        [
+         "2026-11-02T18:00:00Z",
+         "2026-11-02T19:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T19:00:00Z",
+        "2026-11-02T20:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 20,
+     "mile": 500,
+     "lat": 40.70708,
+     "lon": -97.13446,
+     "eta_utc": "2026-11-02T19:35:24Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T19:00:00Z",
+         "2026-11-02T20:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T19:00:00Z",
+        "2026-11-02T20:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 21,
+     "mile": 525,
+     "lat": 40.64906,
+     "lon": -97.6054,
+     "eta_utc": "2026-11-02T20:00:25Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T20:00:00Z",
+         "2026-11-02T21:00:00Z"
+        ],
+        [
+         "2026-11-02T19:00:00Z",
+         "2026-11-02T20:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T20:00:00Z",
+        "2026-11-02T21:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 22,
+     "mile": 550,
+     "lat": 40.59108,
+     "lon": -98.07593,
+     "eta_utc": "2026-11-02T20:25:39Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T20:00:00Z",
+         "2026-11-02T21:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T20:00:00Z",
+        "2026-11-02T21:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 23,
+     "mile": 575,
+     "lat": 40.53316,
+     "lon": -98.54606,
+     "eta_utc": "2026-11-02T20:51:02Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T20:00:00Z",
+         "2026-11-02T21:00:00Z"
+        ],
+        [
+         "2026-11-02T21:00:00Z",
+         "2026-11-02T22:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T20:00:00Z",
+        "2026-11-02T21:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 24,
+     "mile": 600,
+     "lat": 40.47529,
+     "lon": -99.0158,
+     "eta_utc": "2026-11-02T21:16:26Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T21:00:00Z",
+         "2026-11-02T22:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T21:00:00Z",
+        "2026-11-02T22:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 25,
+     "mile": 625,
+     "lat": 40.41746,
+     "lon": -99.48515,
+     "eta_utc": "2026-11-02T21:41:58Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T21:00:00Z",
+         "2026-11-02T22:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T21:00:00Z",
+        "2026-11-02T22:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 26,
+     "mile": 650,
+     "lat": 40.35968,
+     "lon": -99.9541,
+     "eta_utc": "2026-11-02T22:07:41Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 13.3,
+      "gust_mph": 17.3,
+      "rain_in_hr": 0.13,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T22:00:00Z",
+         "2026-11-02T23:00:00Z"
+        ],
+        [
+         "2026-11-02T21:00:00Z",
+         "2026-11-02T22:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T22:00:00Z",
+        "2026-11-02T23:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "moderate",
+      "score": 1,
+      "at_least": null,
+      "missing": [],
+      "drivers": [
+       {
+        "factor": "rain",
+        "level": "moderate",
+        "text": "Rain 0.13 in/hr (Moderate)"
+       }
+      ]
+     }
+    },
+    {
+     "i": 27,
+     "mile": 675,
+     "lat": 40.30196,
+     "lon": -100.42266,
+     "eta_utc": "2026-11-02T22:33:23Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 22.7,
+      "gust_mph": 29.5,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 1.133,
+      "temp_f": 40.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T22:00:00Z",
+         "2026-11-02T23:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T22:00:00Z",
+        "2026-11-02T23:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "high",
+      "score": 2,
+      "at_least": null,
+      "missing": [],
+      "drivers": [
+       {
+        "factor": "snow",
+        "level": "high",
+        "text": "Snow 1.13 in/hr (High)"
+       }
+      ]
+     }
+    },
+    {
+     "i": 28,
+     "mile": 700,
+     "lat": 40.24427,
+     "lon": -100.89084,
+     "eta_utc": "2026-11-02T22:59:13Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 32.4,
+      "gust_mph": 42.1,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 2.282,
+      "temp_f": 28.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T22:00:00Z",
+         "2026-11-02T23:00:00Z"
+        ],
+        [
+         "2026-11-02T23:00:00Z",
+         "2026-11-03T00:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T22:00:00Z",
+        "2026-11-02T23:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "severe",
+      "score": 3,
+      "at_least": null,
+      "missing": [],
+      "drivers": [
+       {
+        "factor": "wind",
+        "level": "moderate",
+        "text": "Wind 32.4 mph (Moderate)"
+       },
+       {
+        "factor": "snow",
+        "level": "severe",
+        "text": "Snow 2.28 in/hr (Severe)"
+       }
+      ]
+     }
+    },
+    {
+     "i": 29,
+     "mile": 725,
+     "lat": 40.18664,
+     "lon": -101.35862,
+     "eta_utc": "2026-11-02T23:25:13Z",
+     "tz": "America/Denver",
+     "weather": {
+      "wind_mph": 40.5,
+      "gust_mph": 52.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 2.386,
+      "temp_f": 28.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T23:00:00Z",
+         "2026-11-03T00:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T23:00:00Z",
+        "2026-11-03T00:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "severe",
+      "score": 3,
+      "at_least": null,
+      "missing": [],
+      "drivers": [
+       {
+        "factor": "wind",
+        "level": "high",
+        "text": "Wind 40.5 mph (High)"
+       },
+       {
+        "factor": "snow",
+        "level": "severe",
+        "text": "Snow 2.39 in/hr (Severe)"
+       }
+      ]
+     }
+    },
+    {
+     "i": 30,
+     "mile": 750,
+     "lat": 40.12906,
+     "lon": -101.82602,
+     "eta_utc": "2026-11-02T23:51:12Z",
+     "tz": "America/Denver",
+     "weather": {
+      "wind_mph": 39.2,
+      "gust_mph": 51.0,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 1.968,
+      "temp_f": 28.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T23:00:00Z",
+         "2026-11-03T00:00:00Z"
+        ],
+        [
+         "2026-11-03T00:00:00Z",
+         "2026-11-03T01:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T23:00:00Z",
+        "2026-11-03T00:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "severe",
+      "score": 3,
+      "at_least": null,
+      "missing": [],
+      "drivers": [
+       {
+        "factor": "wind",
+        "level": "high",
+        "text": "Wind 39.2 mph (High)"
+       },
+       {
+        "factor": "snow",
+        "level": "high",
+        "text": "Snow 1.97 in/hr (High)"
+       },
+       {
+        "factor": "load_rule",
+        "level": "severe",
+        "text": "42,000 lb cargo: 35\u201344 mph wind with cargo over 40,000 lb is Severe"
+       }
+      ]
+     }
+    },
+    {
+     "i": 31,
+     "mile": 775,
+     "lat": 40.07152,
+     "lon": -102.29303,
+     "eta_utc": "2026-11-03T00:17:18Z",
+     "tz": "America/Denver",
+     "weather": {
+      "wind_mph": 30.3,
+      "gust_mph": 39.4,
+      "rain_in_hr": 0.146,
+      "snow_in_hr": 0.0,
+      "temp_f": 36.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-03T00:00:00Z",
+         "2026-11-03T01:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-03T00:00:00Z",
+        "2026-11-03T01:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "moderate",
+      "score": 1,
+      "at_least": null,
+      "missing": [],
+      "drivers": [
+       {
+        "factor": "wind",
+        "level": "moderate",
+        "text": "Wind 30.3 mph (Moderate)"
+       },
+       {
+        "factor": "rain",
+        "level": "moderate",
+        "text": "Rain 0.15 in/hr (Moderate)"
+       }
+      ]
+     }
+    },
+    {
+     "i": 32,
+     "mile": 800,
+     "lat": 40.01403,
+     "lon": -102.75965,
+     "eta_utc": "2026-11-03T00:43:33Z",
+     "tz": "America/Denver",
+     "weather": {
+      "wind_mph": 20.6,
+      "gust_mph": 26.8,
+      "rain_in_hr": 0.077,
+      "snow_in_hr": 0.0,
+      "temp_f": 48.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-03T00:00:00Z",
+         "2026-11-03T01:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-03T00:00:00Z",
+        "2026-11-03T01:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 33,
+     "mile": 825,
+     "lat": 39.95658,
+     "lon": -103.2259,
+     "eta_utc": "2026-11-03T01:09:49Z",
+     "tz": "America/Denver",
+     "weather": {
+      "wind_mph": 12.6,
+      "gust_mph": 16.4,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-03T01:00:00Z",
+         "2026-11-03T02:00:00Z"
+        ],
+        [
+         "2026-11-03T00:00:00Z",
+         "2026-11-03T01:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-03T01:00:00Z",
+        "2026-11-03T02:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 34,
+     "mile": 850,
+     "lat": 39.89919,
+     "lon": -103.69176,
+     "eta_utc": "2026-11-03T01:36:08Z",
+     "tz": "America/Denver",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-03T01:00:00Z",
+         "2026-11-03T02:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-03T01:00:00Z",
+        "2026-11-03T02:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 35,
+     "mile": 875,
+     "lat": 39.84184,
+     "lon": -104.15724,
+     "eta_utc": "2026-11-03T02:02:38Z",
+     "tz": "America/Denver",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-03T02:00:00Z",
+         "2026-11-03T03:00:00Z"
+        ],
+        [
+         "2026-11-03T01:00:00Z",
+         "2026-11-03T02:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-03T02:00:00Z",
+        "2026-11-03T03:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 36,
+     "mile": 900,
+     "lat": 39.78453,
+     "lon": -104.62234,
+     "eta_utc": "2026-11-03T02:29:08Z",
+     "tz": "America/Denver",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-03T02:00:00Z",
+         "2026-11-03T03:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-03T02:00:00Z",
+        "2026-11-03T03:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 37,
+     "mile": 919.8,
+     "lat": 39.7392,
+     "lon": -104.9903,
+     "eta_utc": "2026-11-03T02:50:07Z",
+     "tz": "America/Denver",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-03T02:00:00Z",
+         "2026-11-03T03:00:00Z"
+        ],
+        [
+         "2026-11-03T03:00:00Z",
+         "2026-11-03T04:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-03T02:00:00Z",
+        "2026-11-03T03:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "name": "Route B",
+   "via": "I-76 W",
+   "distance_mi": 937.1,
+   "duration_s": 54411,
+   "arrival_utc": "2026-11-03T03:06:50Z",
+   "arrival_tz": "America/Denver",
+   "eta_method": "route_guidance",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.6298,
+      41.8781
+     ],
+     [
+      -88.54351,
+      42.02888
+     ],
+     [
+      -89.23967,
+      42.13931
+     ],
+     [
+      -89.84881,
+      42.23007
+     ],
+     [
+      -90.41444,
+      42.30759
+     ],
+     [
+      -90.71901,
+      42.34608
+     ],
+     [
+      -90.98007,
+      42.37702
+     ],
+     [
+      -91.24113,
+      42.40593
+     ],
+     [
+      -91.50219,
+      42.43268
+     ],
+     [
+      -91.76325,
+      42.45711
+     ],
+     [
+      -92.02431,
+      42.47913
+     ],
+     [
+      -92.28537,
+      42.49859
+     ],
+     [
+      -92.50292,
+      42.51277
+     ],
+     [
+      -92.76398,
+      42.52727
+     ],
+     [
+      -93.02504,
+      42.5389
+     ],
+     [
+      -93.2861,
+      42.54757
+     ],
+     [
+      -93.50365,
+      42.55248
+     ],
+     [
+      -93.76471,
+      42.5555
+     ],
+     [
+      -93.98226,
+      42.55558
+     ],
+     [
+      -94.24332,
+      42.55268
+     ],
+     [
+      -94.46087,
+      42.54773
+     ],
+     [
+      -94.72193,
+      42.53869
+     ],
+     [
+      -94.93948,
+      42.52855
+     ],
+     [
+      -95.20054,
+      42.51321
+     ],
+     [
+      -95.41809,
+      42.49775
+     ],
+     [
+      -95.67915,
+      42.47596
+     ],
+     [
+      -95.8967,
+      42.4551
+     ],
+     [
+      -96.11425,
+      42.43177
+     ],
+     [
+      -96.33181,
+      42.40596
+     ],
+     [
+      -96.54936,
+      42.37767
+     ],
+     [
+      -96.76691,
+      42.3469
+     ],
+     [
+      -96.98446,
+      42.31366
+     ],
+     [
+      -97.24552,
+      42.27053
+     ],
+     [
+      -97.46307,
+      42.23189
+     ],
+     [
+      -97.72413,
+      42.18233
+     ],
+     [
+      -97.94168,
+      42.13839
+     ],
+     [
+      -98.20274,
+      42.08253
+     ],
+     [
+      -98.42029,
+      42.03341
+     ],
+     [
+      -98.68135,
+      41.97143
+     ],
+     [
+      -98.8989,
+      41.9173
+     ],
+     [
+      -99.15996,
+      41.84942
+     ],
+     [
+      -99.37751,
+      41.79049
+     ],
+     [
+      -99.63857,
+      41.71698
+     ],
+     [
+      -99.89963,
+      41.64054
+     ],
+     [
+      -100.16069,
+      41.56125
+     ],
+     [
+      -100.37824,
+      41.49308
+     ],
+     [
+      -100.6393,
+      41.40886
+     ],
+     [
+      -100.90036,
+      41.32211
+     ],
+     [
+      -101.16142,
+      41.23295
+     ],
+     [
+      -101.42248,
+      41.14151
+     ],
+     [
+      -101.68354,
+      41.04792
+     ],
+     [
+      -101.9446,
+      40.95232
+     ],
+     [
+      -102.24917,
+      40.83844
+     ],
+     [
+      -102.8148,
+      40.62098
+     ],
+     [
+      -103.42394,
+      40.37966
+     ],
+     [
+      -104.07659,
+      40.11513
+     ],
+     [
+      -104.9903,
+      39.7392
+     ]
+    ]
+   },
+   "polyline": "cir~FfezuOkm\\tmqDeqT~}fCgvPb~uBocNdnmBqoFpnz@k`Er~q@usDr~q@efDr~q@uwCr~q@shCr~q@sxBr~q@swAtni@syAr~q@ugAr~q@eu@r~q@u]tni@{Qr~q@Otni@bQr~q@|]tni@nw@r~q@j~@tni@z~Ar~q@r_Btni@dgCr~q@jaCtni@xpCtni@h`Dvni@xoDtni@h_Etni@vnEtni@plGr~q@npFtni@vtHr~q@rqGtni@b|Ir~q@~qHtni@jbKr~q@hqItni@fgLr~q@hoJtni@ljMr~q@v|Mr~q@pnNr~q@`iLtni@jmOr~q@d}Or~q@flPr~q@nzPr~q@|gQr~q@ntQr~q@vfUpnz@bni@dnmBfcn@b~uBhtr@`n~BplhAtmqD",
+   "segments": [
+    {
+     "from_mi": 0.0,
+     "to_mi": 637.5,
+     "level": "low",
+     "coordinates": [
+      [
+       -87.6298,
+       41.8781
+      ],
+      [
+       -88.54351,
+       42.02888
+      ],
+      [
+       -89.23967,
+       42.13931
+      ],
+      [
+       -89.84881,
+       42.23007
+      ],
+      [
+       -90.41444,
+       42.30759
+      ],
+      [
+       -90.71901,
+       42.34608
+      ],
+      [
+       -90.98007,
+       42.37702
+      ],
+      [
+       -91.24113,
+       42.40593
+      ],
+      [
+       -91.50219,
+       42.43268
+      ],
+      [
+       -91.76325,
+       42.45711
+      ],
+      [
+       -92.02431,
+       42.47913
+      ],
+      [
+       -92.28537,
+       42.49859
+      ],
+      [
+       -92.50292,
+       42.51277
+      ],
+      [
+       -92.76398,
+       42.52727
+      ],
+      [
+       -93.02504,
+       42.5389
+      ],
+      [
+       -93.2861,
+       42.54757
+      ],
+      [
+       -93.50365,
+       42.55248
+      ],
+      [
+       -93.76471,
+       42.5555
+      ],
+      [
+       -93.98226,
+       42.55558
+      ],
+      [
+       -94.24332,
+       42.55268
+      ],
+      [
+       -94.46087,
+       42.54773
+      ],
+      [
+       -94.72193,
+       42.53869
+      ],
+      [
+       -94.93948,
+       42.52855
+      ],
+      [
+       -95.20054,
+       42.51321
+      ],
+      [
+       -95.41809,
+       42.49775
+      ],
+      [
+       -95.67915,
+       42.47596
+      ],
+      [
+       -95.8967,
+       42.4551
+      ],
+      [
+       -96.11425,
+       42.43177
+      ],
+      [
+       -96.33181,
+       42.40596
+      ],
+      [
+       -96.54936,
+       42.37767
+      ],
+      [
+       -96.76691,
+       42.3469
+      ],
+      [
+       -96.98446,
+       42.31366
+      ],
+      [
+       -97.24552,
+       42.27053
+      ],
+      [
+       -97.46307,
+       42.23189
+      ],
+      [
+       -97.72413,
+       42.18233
+      ],
+      [
+       -97.94168,
+       42.13839
+      ],
+      [
+       -98.20274,
+       42.08253
+      ],
+      [
+       -98.42029,
+       42.03341
+      ],
+      [
+       -98.68135,
+       41.97143
+      ],
+      [
+       -98.8989,
+       41.9173
+      ],
+      [
+       -99.15996,
+       41.84942
+      ],
+      [
+       -99.37751,
+       41.79049
+      ],
+      [
+       -99.63857,
+       41.71698
+      ],
+      [
+       -99.85822,
+       41.65266
+      ]
+     ]
+    },
+    {
+     "from_mi": 637.5,
+     "to_mi": 687.5,
+     "level": "high",
+     "coordinates": [
+      [
+       -99.85822,
+       41.65266
+      ],
+      [
+       -99.89963,
+       41.64054
+      ],
+      [
+       -100.16069,
+       41.56125
+      ],
+      [
+       -100.37824,
+       41.49308
+      ],
+      [
+       -100.6393,
+       41.40886
+      ],
+      [
+       -100.74913,
+       41.37236
+      ]
+     ]
+    },
+    {
+     "from_mi": 687.5,
+     "to_mi": 712.5,
+     "level": "severe",
+     "coordinates": [
+      [
+       -100.74913,
+       41.37236
+      ],
+      [
+       -100.90036,
+       41.32211
+      ],
+      [
+       -101.16142,
+       41.23295
+      ],
+      [
+       -101.18816,
+       41.22358
+      ]
+     ]
+    },
+    {
+     "from_mi": 712.5,
+     "to_mi": 737.5,
+     "level": "no_travel",
+     "coordinates": [
+      [
+       -101.18816,
+       41.22358
+      ],
+      [
+       -101.42248,
+       41.14151
+      ],
+      [
+       -101.62298,
+       41.06963
+      ]
+     ]
+    },
+    {
+     "from_mi": 737.5,
+     "to_mi": 762.5,
+     "level": "severe",
+     "coordinates": [
+      [
+       -101.62298,
+       41.06963
+      ],
+      [
+       -101.68354,
+       41.04792
+      ],
+      [
+       -101.9446,
+       40.95232
+      ],
+      [
+       -102.05404,
+       40.9114
+      ]
+     ]
+    },
+    {
+     "from_mi": 762.5,
+     "to_mi": 787.5,
+     "level": "moderate",
+     "coordinates": [
+      [
+       -102.05404,
+       40.9114
+      ],
+      [
+       -102.24917,
+       40.83844
+      ],
+      [
+       -102.48132,
+       40.74919
+      ]
+     ]
+    },
+    {
+     "from_mi": 787.5,
+     "to_mi": 937.1,
+     "level": "low",
+     "coordinates": [
+      [
+       -102.48132,
+       40.74919
+      ],
+      [
+       -102.8148,
+       40.62098
+      ],
+      [
+       -103.42394,
+       40.37966
+      ],
+      [
+       -104.07659,
+       40.11513
+      ],
+      [
+       -104.9903,
+       39.7392
+      ]
+     ]
+    }
+   ],
+   "summary": {
+    "miles_by_level": {
+     "low": 787.1,
+     "moderate": 25.0,
+     "high": 50.0,
+     "severe": 50.0,
+     "no_travel": 25.0,
+     "unknown": 0.0
+    },
+    "coverage_pct": 100.0,
+    "no_travel_mi": 25.0,
+    "severe_mi": 50.0,
+    "high_mi": 50.0,
+    "avg_risk": 0.4,
+    "max_level": "no_travel",
+    "checkpoint_count": 39
+   },
+   "eligibility": {
+    "eligible": false,
+    "reasons": [
+     "no_travel"
+    ]
+   },
+   "checkpoints": [
+    {
+     "i": 0,
+     "mile": 0.0,
+     "lat": 41.8781,
+     "lon": -87.6298,
+     "eta_utc": "2026-11-02T12:00:00Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T12:00:00Z",
+         "2026-11-02T13:00:00Z"
+        ],
+        [
+         "2026-11-02T11:00:00Z",
+         "2026-11-02T12:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T12:00:00Z",
+        "2026-11-02T13:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 1,
+     "mile": 25,
+     "lat": 41.95687,
+     "lon": -88.1044,
+     "eta_utc": "2026-11-02T12:18:52Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T12:00:00Z",
+         "2026-11-02T13:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T12:00:00Z",
+        "2026-11-02T13:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 2,
+     "mile": 50,
+     "lat": 42.03477,
+     "lon": -88.57984,
+     "eta_utc": "2026-11-02T12:37:44Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T12:00:00Z",
+         "2026-11-02T13:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T12:00:00Z",
+        "2026-11-02T13:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 3,
+     "mile": 75,
+     "lat": 42.11082,
+     "lon": -89.0564,
+     "eta_utc": "2026-11-02T12:56:36Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T12:00:00Z",
+         "2026-11-02T13:00:00Z"
+        ],
+        [
+         "2026-11-02T13:00:00Z",
+         "2026-11-02T14:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T12:00:00Z",
+        "2026-11-02T13:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 4,
+     "mile": 100,
+     "lat": 42.18403,
+     "lon": -89.53432,
+     "eta_utc": "2026-11-02T13:17:51Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T13:00:00Z",
+         "2026-11-02T14:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T13:00:00Z",
+        "2026-11-02T14:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 5,
+     "mile": 125,
+     "lat": 42.25343,
+     "lon": -90.01383,
+     "eta_utc": "2026-11-02T13:39:26Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T13:00:00Z",
+         "2026-11-02T14:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T13:00:00Z",
+        "2026-11-02T14:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 6,
+     "mile": 150,
+     "lat": 42.31801,
+     "lon": -90.49506,
+     "eta_utc": "2026-11-02T14:01:00Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T14:00:00Z",
+         "2026-11-02T15:00:00Z"
+        ],
+        [
+         "2026-11-02T13:00:00Z",
+         "2026-11-02T14:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T14:00:00Z",
+        "2026-11-02T15:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 7,
+     "mile": 175,
+     "lat": 42.3768,
+     "lon": -90.97812,
+     "eta_utc": "2026-11-02T14:23:27Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T14:00:00Z",
+         "2026-11-02T15:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T14:00:00Z",
+        "2026-11-02T15:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 8,
+     "mile": 200,
+     "lat": 42.42881,
+     "lon": -91.46304,
+     "eta_utc": "2026-11-02T14:46:11Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T14:00:00Z",
+         "2026-11-02T15:00:00Z"
+        ],
+        [
+         "2026-11-02T15:00:00Z",
+         "2026-11-02T16:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T14:00:00Z",
+        "2026-11-02T15:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 9,
+     "mile": 225,
+     "lat": 42.47308,
+     "lon": -91.94972,
+     "eta_utc": "2026-11-02T15:08:56Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T15:00:00Z",
+         "2026-11-02T16:00:00Z"
+        ],
+        [
+         "2026-11-02T14:00:00Z",
+         "2026-11-02T15:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T15:00:00Z",
+        "2026-11-02T16:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 10,
+     "mile": 250,
+     "lat": 42.50873,
+     "lon": -92.43802,
+     "eta_utc": "2026-11-02T15:32:09Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T15:00:00Z",
+         "2026-11-02T16:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T15:00:00Z",
+        "2026-11-02T16:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 11,
+     "mile": 275,
+     "lat": 42.53489,
+     "lon": -92.92766,
+     "eta_utc": "2026-11-02T15:55:41Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T15:00:00Z",
+         "2026-11-02T16:00:00Z"
+        ],
+        [
+         "2026-11-02T16:00:00Z",
+         "2026-11-02T17:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T15:00:00Z",
+        "2026-11-02T16:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 12,
+     "mile": 300,
+     "lat": 42.55081,
+     "lon": -93.41828,
+     "eta_utc": "2026-11-02T16:19:12Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T16:00:00Z",
+         "2026-11-02T17:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T16:00:00Z",
+        "2026-11-02T17:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 13,
+     "mile": 325,
+     "lat": 42.55579,
+     "lon": -93.9094,
+     "eta_utc": "2026-11-02T16:43:01Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T16:00:00Z",
+         "2026-11-02T17:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T16:00:00Z",
+        "2026-11-02T17:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 14,
+     "mile": 350,
+     "lat": 42.54932,
+     "lon": -94.40048,
+     "eta_utc": "2026-11-02T17:07:09Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T17:00:00Z",
+         "2026-11-02T18:00:00Z"
+        ],
+        [
+         "2026-11-02T16:00:00Z",
+         "2026-11-02T17:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T17:00:00Z",
+        "2026-11-02T18:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 15,
+     "mile": 375,
+     "lat": 42.53102,
+     "lon": -94.89092,
+     "eta_utc": "2026-11-02T17:31:16Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T17:00:00Z",
+         "2026-11-02T18:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T17:00:00Z",
+        "2026-11-02T18:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 16,
+     "mile": 400,
+     "lat": 42.50062,
+     "lon": -95.38006,
+     "eta_utc": "2026-11-02T17:55:35Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T17:00:00Z",
+         "2026-11-02T18:00:00Z"
+        ],
+        [
+         "2026-11-02T18:00:00Z",
+         "2026-11-02T19:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T17:00:00Z",
+        "2026-11-02T18:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 17,
+     "mile": 425,
+     "lat": 42.45806,
+     "lon": -95.86724,
+     "eta_utc": "2026-11-02T18:20:11Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T18:00:00Z",
+         "2026-11-02T19:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T18:00:00Z",
+        "2026-11-02T19:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 18,
+     "mile": 450,
+     "lat": 42.40344,
+     "lon": -96.35183,
+     "eta_utc": "2026-11-02T18:44:48Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T18:00:00Z",
+         "2026-11-02T19:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T18:00:00Z",
+        "2026-11-02T19:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 19,
+     "mile": 475,
+     "lat": 42.33701,
+     "lon": -96.83323,
+     "eta_utc": "2026-11-02T19:09:31Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T19:00:00Z",
+         "2026-11-02T20:00:00Z"
+        ],
+        [
+         "2026-11-02T18:00:00Z",
+         "2026-11-02T19:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T19:00:00Z",
+        "2026-11-02T20:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 20,
+     "mile": 500,
+     "lat": 42.25915,
+     "lon": -97.31095,
+     "eta_utc": "2026-11-02T19:34:33Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T19:00:00Z",
+         "2026-11-02T20:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T19:00:00Z",
+        "2026-11-02T20:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 21,
+     "mile": 525,
+     "lat": 42.17035,
+     "lon": -97.78454,
+     "eta_utc": "2026-11-02T19:59:35Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T19:00:00Z",
+         "2026-11-02T20:00:00Z"
+        ],
+        [
+         "2026-11-02T20:00:00Z",
+         "2026-11-02T21:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T19:00:00Z",
+        "2026-11-02T20:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 22,
+     "mile": 550,
+     "lat": 42.07123,
+     "lon": -98.25368,
+     "eta_utc": "2026-11-02T20:24:39Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T20:00:00Z",
+         "2026-11-02T21:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T20:00:00Z",
+        "2026-11-02T21:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 23,
+     "mile": 575,
+     "lat": 41.96242,
+     "lon": -98.71815,
+     "eta_utc": "2026-11-02T20:50:03Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T20:00:00Z",
+         "2026-11-02T21:00:00Z"
+        ],
+        [
+         "2026-11-02T21:00:00Z",
+         "2026-11-02T22:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T20:00:00Z",
+        "2026-11-02T21:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 24,
+     "mile": 600,
+     "lat": 41.84465,
+     "lon": -99.17782,
+     "eta_utc": "2026-11-02T21:15:26Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T21:00:00Z",
+         "2026-11-02T22:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T21:00:00Z",
+        "2026-11-02T22:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 25,
+     "mile": 625,
+     "lat": 41.71867,
+     "lon": -99.63268,
+     "eta_utc": "2026-11-02T21:40:49Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T21:00:00Z",
+         "2026-11-02T22:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T21:00:00Z",
+        "2026-11-02T22:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 26,
+     "mile": 650,
+     "lat": 41.5852,
+     "lon": -100.08277,
+     "eta_utc": "2026-11-02T22:06:32Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 14.6,
+      "gust_mph": 18.9,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 1.046,
+      "temp_f": 52.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T22:00:00Z",
+         "2026-11-02T23:00:00Z"
+        ],
+        [
+         "2026-11-02T21:00:00Z",
+         "2026-11-02T22:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T22:00:00Z",
+        "2026-11-02T23:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "high",
+      "score": 2,
+      "at_least": null,
+      "missing": [],
+      "drivers": [
+       {
+        "factor": "snow",
+        "level": "high",
+        "text": "Snow 1.05 in/hr (High)"
+       }
+      ]
+     }
+    },
+    {
+     "i": 27,
+     "mile": 675,
+     "lat": 41.445,
+     "lon": -100.52824,
+     "eta_utc": "2026-11-02T22:32:15Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 26.3,
+      "gust_mph": 34.2,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 1.491,
+      "temp_f": 40.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T22:00:00Z",
+         "2026-11-02T23:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T22:00:00Z",
+        "2026-11-02T23:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "high",
+      "score": 2,
+      "at_least": null,
+      "missing": [],
+      "drivers": [
+       {
+        "factor": "wind",
+        "level": "moderate",
+        "text": "Wind 26.3 mph (Moderate)"
+       },
+       {
+        "factor": "snow",
+        "level": "high",
+        "text": "Snow 1.49 in/hr (High)"
+       }
+      ]
+     }
+    },
+    {
+     "i": 28,
+     "mile": 700,
+     "lat": 41.29879,
+     "lon": -100.96928,
+     "eta_utc": "2026-11-02T22:57:57Z",
+     "tz": "America/Chicago",
+     "weather": {
+      "wind_mph": 37.4,
+      "gust_mph": 48.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 1.907,
+      "temp_f": 28.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T22:00:00Z",
+         "2026-11-02T23:00:00Z"
+        ],
+        [
+         "2026-11-02T23:00:00Z",
+         "2026-11-03T00:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T22:00:00Z",
+        "2026-11-02T23:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "severe",
+      "score": 3,
+      "at_least": null,
+      "missing": [],
+      "drivers": [
+       {
+        "factor": "wind",
+        "level": "high",
+        "text": "Wind 37.4 mph (High)"
+       },
+       {
+        "factor": "snow",
+        "level": "high",
+        "text": "Snow 1.91 in/hr (High)"
+       },
+       {
+        "factor": "load_rule",
+        "level": "severe",
+        "text": "42,000 lb cargo: 35\u201344 mph wind with cargo over 40,000 lb is Severe"
+       }
+      ]
+     }
+    },
+    {
+     "i": 29,
+     "mile": 725,
+     "lat": 41.14729,
+     "lon": -101.40614,
+     "eta_utc": "2026-11-02T23:23:55Z",
+     "tz": "America/Denver",
+     "weather": {
+      "wind_mph": 45.7,
+      "gust_mph": 59.4,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 2.778,
+      "temp_f": 28.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T23:00:00Z",
+         "2026-11-03T00:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T23:00:00Z",
+        "2026-11-03T00:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "no_travel",
+      "score": 4,
+      "at_least": null,
+      "missing": [],
+      "drivers": [
+       {
+        "factor": "wind",
+        "level": "severe",
+        "text": "Wind 45.7 mph (Severe)"
+       },
+       {
+        "factor": "snow",
+        "level": "severe",
+        "text": "Snow 2.78 in/hr (Severe)"
+       },
+       {
+        "factor": "load_rule",
+        "level": "no_travel",
+        "text": "42,000 lb cargo: 45\u201354 mph wind with cargo over 30,000 lb is No Travel"
+       }
+      ]
+     }
+    },
+    {
+     "i": 30,
+     "mile": 750,
+     "lat": 40.99118,
+     "lon": -101.8391,
+     "eta_utc": "2026-11-02T23:49:55Z",
+     "tz": "America/Denver",
+     "weather": {
+      "wind_mph": 43.8,
+      "gust_mph": 56.9,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 2.289,
+      "temp_f": 28.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-02T23:00:00Z",
+         "2026-11-03T00:00:00Z"
+        ],
+        [
+         "2026-11-03T00:00:00Z",
+         "2026-11-03T01:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-02T23:00:00Z",
+        "2026-11-03T00:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "severe",
+      "score": 3,
+      "at_least": null,
+      "missing": [],
+      "drivers": [
+       {
+        "factor": "wind",
+        "level": "high",
+        "text": "Wind 43.8 mph (High)"
+       },
+       {
+        "factor": "snow",
+        "level": "severe",
+        "text": "Snow 2.29 in/hr (Severe)"
+       }
+      ]
+     }
+    },
+    {
+     "i": 31,
+     "mile": 775,
+     "lat": 40.83112,
+     "lon": -102.2685,
+     "eta_utc": "2026-11-03T00:15:55Z",
+     "tz": "America/Denver",
+     "weather": {
+      "wind_mph": 33.6,
+      "gust_mph": 43.7,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.972,
+      "temp_f": 28.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-03T00:00:00Z",
+         "2026-11-03T01:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-03T00:00:00Z",
+        "2026-11-03T01:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "moderate",
+      "score": 1,
+      "at_least": null,
+      "missing": [],
+      "drivers": [
+       {
+        "factor": "wind",
+        "level": "moderate",
+        "text": "Wind 33.6 mph (Moderate)"
+       },
+       {
+        "factor": "snow",
+        "level": "moderate",
+        "text": "Snow 0.97 in/hr (Moderate)"
+       }
+      ]
+     }
+    },
+    {
+     "i": 32,
+     "mile": 800,
+     "lat": 40.66776,
+     "lon": -102.69466,
+     "eta_utc": "2026-11-03T00:42:07Z",
+     "tz": "America/Denver",
+     "weather": {
+      "wind_mph": 22.9,
+      "gust_mph": 29.8,
+      "rain_in_hr": 0.099,
+      "snow_in_hr": 0.0,
+      "temp_f": 47.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-03T00:00:00Z",
+         "2026-11-03T01:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-03T00:00:00Z",
+        "2026-11-03T01:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 33,
+     "mile": 825,
+     "lat": 40.50169,
+     "lon": -103.11795,
+     "eta_utc": "2026-11-03T01:08:22Z",
+     "tz": "America/Denver",
+     "weather": {
+      "wind_mph": 13.9,
+      "gust_mph": 18.0,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-03T01:00:00Z",
+         "2026-11-03T02:00:00Z"
+        ],
+        [
+         "2026-11-03T00:00:00Z",
+         "2026-11-03T01:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-03T01:00:00Z",
+        "2026-11-03T02:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 34,
+     "mile": 850,
+     "lat": 40.3335,
+     "lon": -103.53875,
+     "eta_utc": "2026-11-03T01:34:38Z",
+     "tz": "America/Denver",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-03T01:00:00Z",
+         "2026-11-03T02:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-03T01:00:00Z",
+        "2026-11-03T02:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 35,
+     "mile": 875,
+     "lat": 40.16378,
+     "lon": -103.95742,
+     "eta_utc": "2026-11-03T02:01:02Z",
+     "tz": "America/Denver",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-03T02:00:00Z",
+         "2026-11-03T03:00:00Z"
+        ],
+        [
+         "2026-11-03T01:00:00Z",
+         "2026-11-03T02:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-03T02:00:00Z",
+        "2026-11-03T03:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 36,
+     "mile": 900,
+     "lat": 39.99306,
+     "lon": -104.37436,
+     "eta_utc": "2026-11-03T02:27:32Z",
+     "tz": "America/Denver",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-03T02:00:00Z",
+         "2026-11-03T03:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-03T02:00:00Z",
+        "2026-11-03T03:00:00Z"
+       ],
+       "adjacent_interval_used": false
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 37,
+     "mile": 925,
+     "lat": 39.82189,
+     "lon": -104.78993,
+     "eta_utc": "2026-11-03T02:54:02Z",
+     "tz": "America/Denver",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-03T02:00:00Z",
+         "2026-11-03T03:00:00Z"
+        ],
+        [
+         "2026-11-03T03:00:00Z",
+         "2026-11-03T04:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-03T02:00:00Z",
+        "2026-11-03T03:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    },
+    {
+     "i": 38,
+     "mile": 937.1,
+     "lat": 39.7392,
+     "lon": -104.9903,
+     "eta_utc": "2026-11-03T03:06:50Z",
+     "tz": "America/Denver",
+     "weather": {
+      "wind_mph": 12.0,
+      "gust_mph": 15.6,
+      "rain_in_hr": 0.0,
+      "snow_in_hr": 0.0,
+      "temp_f": 55.0,
+      "basis": {
+       "precip_intervals": [
+        [
+         "2026-11-03T03:00:00Z",
+         "2026-11-03T04:00:00Z"
+        ],
+        [
+         "2026-11-03T02:00:00Z",
+         "2026-11-03T03:00:00Z"
+        ]
+       ],
+       "wind_stamps": [
+        "2026-11-03T03:00:00Z",
+        "2026-11-03T04:00:00Z"
+       ],
+       "adjacent_interval_used": true
+      },
+      "source_units": {
+       "wind": "mp/h",
+       "rain": "inch+inch",
+       "snow": "inch"
+      }
+     },
+     "risk": {
+      "level": "low",
+      "score": 0,
+      "at_least": null,
+      "missing": [],
+      "drivers": []
+     }
+    }
+   ]
+  }
+ ],
+ "recommendation": {
+  "status": "recommended",
+  "route_id": "A",
+  "ranking": [
+   "A"
+  ],
+  "headline": "Route A is the safest eligible route",
+  "reasons": [
+   "Route B is not eligible: No Travel conditions on 25 mi"
+  ],
+  "caveats": [
+   "Still includes 75 mi of Severe risk",
+   "Still includes 25 mi of High risk"
+  ]
+ },
+ "meta": {
+  "routing_provider": "fake-routing",
+  "weather_provider": "mock",
+  "weather_model": "synthetic demo data",
+  "timings_ms": {
+   "routing": 0,
+   "weather": 7,
+   "total": 55
+  },
+  "weather_cache": {
+   "hits": 0,
+   "misses": 0
+  }
+ }
+}

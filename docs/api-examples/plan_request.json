@@ -1,0 +1,15 @@
+{
+ "origin": {
+  "label": "Chicago, IL",
+  "lat": 41.8781,
+  "lon": -87.6298
+ },
+ "destination": {
+  "label": "Denver, CO",
+  "lat": 39.7392,
+  "lon": -104.9903
+ },
+ "departure_local": "2026-11-02T06:00",
+ "cargo_weight_lb": 42000,
+ "interval_miles": 25
+}

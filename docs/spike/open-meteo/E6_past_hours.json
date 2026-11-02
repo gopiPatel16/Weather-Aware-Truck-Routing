@@ -1,0 +1,91 @@
+{
+ "url": "https://api.open-meteo.com/v1/forecast?latitude=41.8781&longitude=-87.6298&hourly=wind_speed_10m,wind_gusts_10m,rain,showers,snowfall,precipitation,temperature_2m&start_hour=2026-11-01T14:00&end_hour=2026-11-01T19:00&wind_speed_unit=mph&precipitation_unit=inch&temperature_unit=fahrenheit&timezone=GMT",
+ "status": 200,
+ "ms": 599,
+ "bytes": 817,
+ "data": {
+  "latitude": 41.879498,
+  "longitude": -87.64974,
+  "generationtime_ms": 0.12159347534179688,
+  "utc_offset_seconds": 0,
+  "timezone": "GMT",
+  "timezone_abbreviation": "GMT",
+  "elevation": 241.0,
+  "hourly_units": {
+   "time": "iso8601",
+   "wind_speed_10m": "mp/h",
+   "wind_gusts_10m": "mp/h",
+   "rain": "inch",
+   "showers": "inch",
+   "snowfall": "inch",
+   "precipitation": "inch",
+   "temperature_2m": "\u00b0F"
+  },
+  "hourly": {
+   "time": [
+    "2026-11-01T14:00",
+    "2026-11-01T15:00",
+    "2026-11-01T16:00",
+    "2026-11-01T17:00",
+    "2026-11-01T18:00",
+    "2026-11-01T19:00"
+   ],
+   "wind_speed_10m": [
+    2.4,
+    4.9,
+    4.8,
+    3.4,
+    7.1,
+    5.7
+   ],
+   "wind_gusts_10m": [
+    3.8,
+    11.9,
+    12.1,
+    9.8,
+    10.1,
+    8.7
+   ],
+   "rain": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "showers": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "snowfall": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "precipitation": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "temperature_2m": [
+    52.8,
+    54.0,
+    54.7,
+    56.3,
+    57.0,
+    58.1
+   ]
+  }
+ }
+}

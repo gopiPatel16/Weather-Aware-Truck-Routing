@@ -1,0 +1,6 @@
+{
+ "url": "https://api.open-meteo.com/v1/forecast?latitude=41.8781,41.2565,39.7392&longitude=-87.6298,-95.9345,-104.9903&hourly=wind_speed_10m,wind_gusts_10m,rain,showers,snowfall,precipitation,temperature_2m&start_hour=2026-11-16T17:00&end_hour=2026-11-18T17:00&wind_speed_unit=mph&precipitation_unit=inch&temperature_unit=fahrenheit&timezone=GMT",
+ "status": 400,
+ "ms": 604,
+ "body_head": "{'error': True, 'reason': \"Parameter 'end_hour' is out of allowed range from 2026-07-31 to 2026-11-16\"}"
+}

@@ -1,0 +1,6 @@
+{
+ "error": {
+  "code": "invalid_departure_time",
+  "message": "2026-03-08 02:30 does not exist in America/Chicago (clocks jump forward). The next valid time is 2026-03-08 03:00."
+ }
+}
