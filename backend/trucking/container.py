@@ -43,9 +43,9 @@ def _build_weather() -> WeatherProvider:
 def _build_routing() -> RoutingProvider:
     if not settings.TOMTOM_API_KEY:
         return _Unconfigured()  # type: ignore[return-value]
-    from trucking.services.routing.tomtom import TomTomRouting  # added after the live spike
+    from trucking.services.routing.tomtom import TomTomRouting
 
-    return TomTomRouting(api_key=settings.TOMTOM_API_KEY)
+    return TomTomRouting(api_key=settings.TOMTOM_API_KEY, cache=DjangoCache())
 
 
 def get_planner() -> Planner:
@@ -63,7 +63,7 @@ def get_geocoder() -> GeocodingProvider:
         else:
             from trucking.services.geocoding.tomtom import TomTomGeocoder
 
-            _geocoder = TomTomGeocoder(api_key=settings.TOMTOM_API_KEY)
+            _geocoder = TomTomGeocoder(api_key=settings.TOMTOM_API_KEY, cache=DjangoCache())
     assert _geocoder is not None
     return _geocoder
 

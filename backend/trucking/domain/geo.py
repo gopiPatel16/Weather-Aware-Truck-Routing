@@ -101,33 +101,39 @@ def sample_along(
     return out
 
 
-def _point_segment_miles(p: LatLon, a: LatLon, b: LatLon) -> float:
-    cos_lat = math.cos(math.radians(p[0]))
-    ax, ay = (a[1] - p[1]) * cos_lat, a[0] - p[0]
-    bx, by = (b[1] - p[1]) * cos_lat, b[0] - p[0]
-    dx, dy = bx - ax, by - ay
-    length_sq = dx * dx + dy * dy
-    t = 0.0 if length_sq == 0 else max(0.0, min(1.0, -(ax * dx + ay * dy) / length_sq))
-    return math.hypot(ax + t * dx, ay + t * dy) * MILES_PER_DEGREE
-
-
 def simplify(points: Sequence[LatLon], tolerance_m: float) -> list[LatLon]:
-    """Douglas-Peucker (iterative) - used only for geometry sent to the browser."""
+    """Douglas-Peucker (iterative) - used only for geometry sent to the browser.
+
+    Points are projected once to a local plane (miles, each point scaled by its own cos(latitude)) and
+    compared with squared distances, which keeps a 10 000-point route well under 100 ms.
+    """
     n = len(points)
     if n <= 2:
         return list(points)
-    tol_mi = tolerance_m / METERS_PER_MILE
+    tol_sq = (tolerance_m / METERS_PER_MILE) ** 2
+    xs = [lon * math.cos(math.radians(lat)) * MILES_PER_DEGREE for lat, lon in points]
+    ys = [lat * MILES_PER_DEGREE for lat, _ in points]
     keep = [False] * n
     keep[0] = keep[-1] = True
     stack = [(0, n - 1)]
     while stack:
         lo, hi = stack.pop()
+        ax, ay = xs[lo], ys[lo]
+        dx, dy = xs[hi] - ax, ys[hi] - ay
+        length_sq = dx * dx + dy * dy
         far, far_d = -1, 0.0
         for i in range(lo + 1, hi):
-            d = _point_segment_miles(points[i], points[lo], points[hi])
+            px, py = xs[i] - ax, ys[i] - ay
+            if length_sq == 0:
+                d = px * px + py * py
+            else:
+                t = (px * dx + py * dy) / length_sq
+                t = 0.0 if t < 0.0 else 1.0 if t > 1.0 else t
+                ex, ey = px - t * dx, py - t * dy
+                d = ex * ex + ey * ey
             if d > far_d:
                 far, far_d = i, d
-        if far_d > tol_mi:
+        if far_d > tol_sq:
             keep[far] = True
             stack.append((lo, far))
             stack.append((far, hi))

@@ -337,3 +337,25 @@ def test_heatmap_all_failed_is_a_502():
 def test_series_type_used_by_fakes_is_hourly_series():
     sample = constant_weather().builder((41.0, -90.0), datetime(2026, 11, 2, 12, tzinfo=UTC), 5)
     assert isinstance(sample, HourlySeries)
+
+
+class _RateLimitedWeather(FakeWeather):
+    """Every point fails and the provider said HTTP 429 (e.g. the free hourly limit)."""
+
+    def fetch(self, points, start, end):
+        result = super().fetch(points, start, end)
+        result.warnings.append("Weather data unavailable for 3 locations (HTTP 429).")
+        return result
+
+
+def test_provider_rate_limit_is_reported_as_such_not_as_an_outage():
+    weather = _RateLimitedWeather(lambda p, s, h: None)
+    with pytest.raises(ApiError) as info:
+        make(weather=weather).plan(request())
+    assert info.value.code == "rate_limited" and info.value.status == 429
+    assert info.value.retry_after_s == 300 and "limit" in info.value.message
+    with pytest.raises(ApiError) as heat:
+        make(weather=weather).heatmap(
+            [("A", three_routes()[0].points)], datetime(2026, 11, 2, 12, tzinfo=UTC), 40_000
+        )
+    assert heat.value.code == "rate_limited"

@@ -220,5 +220,14 @@ def test_rate_limit_returns_the_error_envelope(client, settings):
 
 def test_openapi_schema_and_docs_are_served(client):
     schema = client.get("/api/schema/")
-    assert schema.status_code == 200 and b"/api/plan/" in schema.content
+    assert schema.status_code == 200 and b"/api/plan" in schema.content
     assert client.get("/api/docs/").status_code == 200
+
+
+@pytest.mark.parametrize("suffix", ["", "/"])
+def test_endpoints_answer_with_and_without_a_trailing_slash(suffix):
+    client = APIClient()
+    assert client.get(f"/api/health{suffix}").status_code == 200
+    assert client.post(f"/api/plan{suffix}", {}, format="json").status_code == 400
+    assert client.post(f"/api/heatmap{suffix}", {}, format="json").status_code == 400
+    assert client.get(f"/api/geocode{suffix}", {"q": "d"}).status_code == 400

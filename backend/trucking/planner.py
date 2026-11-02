@@ -96,6 +96,24 @@ def _coords(points: Sequence[LatLon]) -> list[list[float]]:
     return [[round(lon, 5), round(lat, 5)] for lat, lon in points]
 
 
+def _weather_failure(weather: WeatherResult) -> ApiError:
+    """Every forecast request failed. A provider rate limit gets its own message: retrying at once is useless."""
+    if any("429" in w for w in weather.warnings):
+        return ApiError(
+            "rate_limited",
+            "The free weather service's request limit has been reached. Wait a few minutes and try "
+            "again (an hourly limit can take up to an hour to reset).",
+            429,
+            retry_after_s=300,
+        )
+    return ApiError(
+        "weather_unavailable",
+        "The weather forecast service is unavailable right now. Please try again shortly.",
+        502,
+        retry_after_s=30,
+    )
+
+
 class Planner:
     def __init__(
         self,
@@ -164,12 +182,7 @@ class Planner:
         )
         timings["weather"] = round((time.perf_counter() - t) * 1000)
         if weather.all_failed:
-            raise ApiError(
-                "weather_unavailable",
-                "The weather forecast service is unavailable right now. Please try again shortly.",
-                502,
-                retry_after_s=30,
-            )
+            raise _weather_failure(weather)
         warnings.extend(weather.warnings)
 
         routes_out: list[dict[str, Any]] = []
@@ -233,12 +246,7 @@ class Planner:
         )
         weather_ms = round((time.perf_counter() - t) * 1000)
         if weather.all_failed:
-            raise ApiError(
-                "weather_unavailable",
-                "The weather forecast service is unavailable right now.",
-                502,
-                retry_after_s=30,
-            )
+            raise _weather_failure(weather)
 
         out_cells = []
         unknown_cells = 0

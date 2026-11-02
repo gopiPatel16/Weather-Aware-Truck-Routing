@@ -24,6 +24,13 @@ def env(name: str, default: str = "") -> str:
     return os.environ.get(name, default)
 
 
+# Behind a TLS-intercepting proxy / antivirus (common on managed Windows machines) the bundled CA list
+# cannot verify HTTPS; set USE_SYSTEM_CA_STORE=1 to trust the operating system's certificate store instead.
+if env("USE_SYSTEM_CA_STORE", "0") == "1":
+    import truststore
+
+    truststore.inject_into_ssl()
+
 DEBUG = env("DJANGO_DEBUG", "0") == "1"
 SECRET_KEY = env("DJANGO_SECRET_KEY", "dev-insecure-key-change-me" if DEBUG else "")
 if not SECRET_KEY:
@@ -109,4 +116,9 @@ LOGGING = {
     "disable_existing_loggers": False,
     "handlers": {"console": {"class": "logging.StreamHandler"}},
     "root": {"handlers": ["console"], "level": env("LOG_LEVEL", "INFO")},
+    # httpx logs every request URL at INFO, and TomTom/Open-Meteo keys travel in the query string.
+    "loggers": {
+        "httpx": {"level": "WARNING"},
+        "httpcore": {"level": "WARNING"},
+    },
 }
