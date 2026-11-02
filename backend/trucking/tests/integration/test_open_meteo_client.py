@@ -221,3 +221,43 @@ def test_mock_storm_reaches_no_travel_and_moves_east():
 def test_mock_rejects_unknown_scenario():
     with pytest.raises(ValueError):
         MockWeatherProvider("tornado")
+
+
+@respx.mock
+def test_minutely_limit_waits_for_the_next_minute_then_succeeds():
+    respx.get(FREE_URL).mock(
+        side_effect=[
+            httpx.Response(
+                429, json={"error": True, "reason": "Minutely API request limit exceeded."}
+            ),
+            httpx.Response(200, json=locations(1)),
+        ]
+    )
+    c, sleeps = client()
+    result = c.fetch([(41.88, -87.63)], START, END)
+    assert result.series[(41.88, -87.63)] is not None and sleeps == [20.0]
+
+
+@respx.mock
+def test_hourly_limit_fails_fast_without_waiting():
+    route = respx.get(FREE_URL).mock(
+        return_value=httpx.Response(
+            429, json={"error": True, "reason": "Hourly API request limit exceeded."}
+        )
+    )
+    c, sleeps = client()
+    result = c.fetch([(41.88, -87.63)], START, END)
+    assert result.all_failed and route.call_count == 1 and sleeps == []
+    assert "429" in result.warnings[0]
+
+
+@respx.mock
+def test_minutely_limit_gives_up_after_three_waits():
+    respx.get(FREE_URL).mock(
+        return_value=httpx.Response(
+            429, json={"error": True, "reason": "Minutely API request limit exceeded."}
+        )
+    )
+    c, sleeps = client()
+    result = c.fetch([(41.88, -87.63)], START, END)
+    assert result.all_failed and sleeps[:3] == [20.0] * 3

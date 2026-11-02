@@ -41,6 +41,10 @@ log = logging.getLogger(__name__)
 FREE_URL = "https://api.open-meteo.com/v1/forecast"
 PAID_URL = "https://customer-api.open-meteo.com/v1/forecast"
 MAX_ATTEMPTS = 3
+# Open-Meteo's free tier has a per-minute location budget. A heatmap right after a plan can exceed it;
+# waiting for the next minute is better than reporting Unknown, but only for the *minutely* limit.
+MINUTELY_WAIT_S = 20.0
+MINUTELY_MAX_WAITS = 3
 TIMEOUT = httpx.Timeout(15.0, connect=3.0)
 
 
@@ -160,7 +164,11 @@ class OpenMeteoClient:
 
         last_error = "unknown error"
         retry_after: int | None = None
-        for attempt in range(1, MAX_ATTEMPTS + 1):
+        minutely_waits = 0
+        attempt = 0
+        while attempt < MAX_ATTEMPTS:
+            attempt += 1
+            delay = 0.0
             try:
                 response = self._http.get(url, params=params)
             except (httpx.TimeoutException, httpx.TransportError) as exc:
@@ -169,13 +177,25 @@ class OpenMeteoClient:
             else:
                 if response.status_code == 200:
                     return self._parse(response, len(chunk))
-                if response.status_code == 429 or response.status_code >= 500:
-                    last_error = f"HTTP {response.status_code}"
+                if response.status_code == 429:
+                    reason = self._reason(response).lower()
+                    last_error = "HTTP 429"
+                    if "minute" in reason and minutely_waits < MINUTELY_MAX_WAITS:
+                        minutely_waits += 1
+                        attempt -= 1  # waiting out the minute is not a failed attempt
+                        self._sleep(MINUTELY_WAIT_S)
+                        continue
+                    if "hour" in reason or "day" in reason:
+                        # Retrying cannot help for a long time; fail fast so the user is told.
+                        raise WeatherUnavailable("HTTP 429", retry_after_s=300)
                     header = response.headers.get("Retry-After", "")
                     retry_after = int(header) if header.isdigit() else None
                     delay = (
                         float(retry_after) if retry_after is not None else 0.5 * 2 ** (attempt - 1)
                     )
+                elif response.status_code >= 500:
+                    last_error = f"HTTP {response.status_code}"
+                    delay = 0.5 * 2 ** (attempt - 1)
                 else:  # 4xx such as an out-of-range window: retrying cannot help
                     raise WeatherUnavailable(
                         f"HTTP {response.status_code}: {self._reason(response)}"

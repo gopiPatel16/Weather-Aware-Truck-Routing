@@ -13,7 +13,7 @@ Record at 1440×900, browser zoom 100 %. Have the app open on the hosted URL, `d
 | 4:15 | Heatmap: drag the slider, press ▶, then point at the legend | "All 49 hours load once, so scrubbing makes no request. The heat layer is a smoothed overview; the markers and route colours are the exact categories — a hollow grey ring means *Unknown*, which is never treated as Low." |
 | 5:15 | Mock scenarios: `no_safe_route`, then `inconclusive` | "If every route has No Travel miles, nothing is recommended: *No safe route available*. If the forecast is incomplete, the app says a safe recommendation can't be determined and shows each route's coverage." |
 | 6:00 | Editor: `risk.py`, `scoring.py`, the boundary tests | "Thresholds live in data tables. Every exact boundary and the value just above and below it is tested, including 1.00 in/hr rain being Severe and 3.0 in/hr snow being Severe. Eligible routes are ranked by Severe miles, High miles, average risk, then time — a route with No Travel miles can't be recommended at all." |
-| 7:00 | `docs/PERFORMANCE.md`, CI badge or Actions run | "Measured numbers are in the performance doc. Backend: 273 tests, 96 % coverage; frontend: 80 tests; lint, types and build run in CI." |
+| 7:00 | `docs/PERFORMANCE.md`, CI badge or Actions run | "Measured numbers are in the performance doc. Backend: 276 tests, 96 % coverage; frontend: 80 tests; lint, types and build run in CI." |
 | 7:30 | README limitations | "Limits: wind, rain and snow only (no ice or fog); ETAs assume continuous driving; the free weather API is non-commercial and rate-limited, so long routes at a 10-mile interval can come back with Unknown sections — the app reports that honestly. Thanks for watching." |
 
 ## Checklist before recording

@@ -2,7 +2,9 @@
 
 Helps a truck driver choose a safer route from **weather, cargo weight and travel time**. React + TypeScript frontend, Django REST backend, a truck-routing API, an hourly forecast API and a MapLibre map.
 
-> **Status:** backend (273 tests, 96 % coverage) and frontend (80 tests) are complete and verified against the live TomTom and Open-Meteo APIs. Evidence for every requirement: [`docs/ACCEPTANCE.md`](docs/ACCEPTANCE.md). Specification: [`docs/PLAN.md`](docs/PLAN.md). Provider evidence: [`docs/spike/SPIKE_REPORT.md`](docs/spike/SPIKE_REPORT.md). Measured numbers: [`docs/PERFORMANCE.md`](docs/PERFORMANCE.md). Demo script: [`docs/WALKTHROUGH.md`](docs/WALKTHROUGH.md).
+> **Status:** backend (276 tests, 96 % coverage) and frontend (80 tests) are complete and verified against the live TomTom and Open-Meteo APIs. Evidence for every requirement: [`docs/ACCEPTANCE.md`](docs/ACCEPTANCE.md). Specification: [`docs/PLAN.md`](docs/PLAN.md). Provider evidence: [`docs/spike/SPIKE_REPORT.md`](docs/spike/SPIKE_REPORT.md). Measured numbers: [`docs/PERFORMANCE.md`](docs/PERFORMANCE.md). Demo script: [`docs/WALKTHROUGH.md`](docs/WALKTHROUGH.md).
+
+**Live demo:** https://weather-aware-truck-routing-l7mt.onrender.com (free tier: the first visit after 15 minutes idle can take about a minute to wake up)
 
 ## What it does
 
@@ -39,7 +41,7 @@ Helps a truck driver choose a safer route from **weather, cargo weight and trave
 - ETAs assume continuous driving at the routing provider's truck speeds with typical traffic — no rest breaks or fuel stops. If the provider gives no timing data the ETAs are flagged "estimated from average speed".
 - Only wind, rain and snow are modelled (no ice, fog or visibility). Wind means sustained 10 m speed (gusts are shown for information).
 - Forecast reliability drops with lead time, so departure is limited to 7 days ahead. The app is US-unit based (mph, in/hr, lb).
-- The free Open-Meteo API is for **non-commercial** use; commercial use needs a paid plan. It also allows about 600 locations per minute per IP, and every checkpoint and heatmap cell counts as one location. Several plans in a minute, or a 10-mile interval on a long trip, can exceed that; the affected checkpoints then become **Unknown** and the app says the recommendation cannot be determined instead of guessing. Repeat requests are cached for 30 minutes.
+- The free Open-Meteo API is for **non-commercial** use; commercial use needs a paid plan. It also allows about 600 locations per minute per IP, and every checkpoint and heatmap cell counts as one location. Several plans in a minute, or a 10-mile interval on a long trip, can exceed that. The server waits out a per-minute limit (up to about a minute); if the limit is hourly it reports that straight away. Anything it still cannot fetch becomes **Unknown** and the app says the recommendation cannot be determined instead of guessing. Repeat requests are cached for 30 minutes.
 - TomTom answers take about 4–6 s for 1000-mile trips with alternatives, so a first plan takes roughly 6–10 s; repeats of the same trip are served in about a second.
 
 ## Run locally (Windows PowerShell)
@@ -52,7 +54,7 @@ python -m venv .venv
 .\.venv\Scripts\python -m pip install -r requirements-dev.txt
 copy .env.example .env        # then set TOMTOM_API_KEY in .env
 .\.venv\Scripts\python manage.py runserver     # API on http://localhost:8000, docs at /api/docs/
-.\.venv\Scripts\python -m pytest               # 273 tests
+.\.venv\Scripts\python -m pytest               # 276 tests
 ```
 
 Frontend (Node 22.12+):
