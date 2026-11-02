@@ -9,7 +9,7 @@ services:
       - key: DJANGO_SECRET_KEY
         generateValue: true
       - key: DJANGO_ALLOWED_HOSTS
-        value: .onrender.com
+        value: ".onrender.com,localhost,127.0.0.1"
       - key: WEATHER_PROVIDER
         value: open_meteo
       - key: TOMTOM_API_KEY
