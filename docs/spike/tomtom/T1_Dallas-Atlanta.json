@@ -1,0 +1,729 @@
+{
+ "url": "https://api.tomtom.com/routing/1/calculateRoute/32.7767,-96.797:33.749,-84.388/json?travelMode=truck&routeType=fastest&traffic=true&maxAlternatives=2&departAt=2026-11-02T08:00:00Z&routeRepresentation=encodedPolyline&instructionsType=coded&sectionType=travelMode&sectionType=motorway&report=effectiveSettings&computeTravelTimeFor=all",
+ "ms": 5649,
+ "response": {
+  "formatVersion": "0.0.12",
+  "report": {
+   "effectiveSettings": [
+    {
+     "key": "computeBestOrder",
+     "value": "false"
+    },
+    {
+     "key": "computeTollAmounts",
+     "value": "none"
+    },
+    {
+     "key": "computeTravelTimeFor",
+     "value": "all"
+    },
+    {
+     "key": "contentType",
+     "value": "json"
+    },
+    {
+     "key": "departAt",
+     "value": "2026-11-02T08:00:00.000Z"
+    },
+    {
+     "key": "guidanceVersion",
+     "value": "1"
+    },
+    {
+     "key": "includeTollPaymentTypes",
+     "value": "none"
+    },
+    {
+     "key": "instructionsType",
+     "value": "coded"
+    },
+    {
+     "key": "language",
+     "value": "en-GB"
+    },
+    {
+     "key": "locations",
+     "value": "32.77670,-96.79700:33.74900,-84.38800"
+    },
+    {
+     "key": "maxAlternatives",
+     "value": "2"
+    },
+    {
+     "key": "maxPathAlternatives",
+     "value": "2"
+    },
+    {
+     "key": "routeRepresentation",
+     "value": "encodedPolyline"
+    },
+    {
+     "key": "routeType",
+     "value": "fastest"
+    },
+    {
+     "key": "sectionType",
+     "value": "travelMode"
+    },
+    {
+     "key": "sectionType",
+     "value": "motorway"
+    },
+    {
+     "key": "traffic",
+     "value": "true"
+    },
+    {
+     "key": "travelMode",
+     "value": "truck"
+    },
+    {
+     "key": "vehicleAxleWeight",
+     "value": "0"
+    },
+    {
+     "key": "vehicleCommercial",
+     "value": "false"
+    },
+    {
+     "key": "vehicleEngineType",
+     "value": "combustion"
+    },
+    {
+     "key": "vehicleHeight",
+     "value": "0.00"
+    },
+    {
+     "key": "vehicleLength",
+     "value": "0.00"
+    },
+    {
+     "key": "vehicleMaxSpeed",
+     "value": "0"
+    },
+    {
+     "key": "vehicleNumberOfAxles",
+     "value": "0"
+    },
+    {
+     "key": "vehicleWeight",
+     "value": "0"
+    },
+    {
+     "key": "vehicleWidth",
+     "value": "0.00"
+    }
+   ]
+  },
+  "routes": [
+   {
+    "summary": {
+     "lengthInMeters": 1261660,
+     "travelTimeInSeconds": 39342,
+     "trafficDelayInSeconds": 0,
+     "trafficLengthInMeters": 0,
+     "departureTime": "2026-11-02T02:00:00-06:00",
+     "arrivalTime": "2026-11-02T13:55:42-05:00",
+     "noTrafficTravelTimeInSeconds": 38844,
+     "historicTrafficTravelTimeInSeconds": 39358,
+     "liveTrafficIncidentsTravelTimeInSeconds": 39342
+    },
+    "legs": [
+     {
+      "summary": {
+       "lengthInMeters": 1261660,
+       "travelTimeInSeconds": 39342,
+       "trafficDelayInSeconds": 0,
+       "trafficLengthInMeters": 0,
+       "departureTime": "2026-11-02T02:00:00-06:00",
+       "arrivalTime": "2026-11-02T13:55:42-05:00",
+       "noTrafficTravelTimeInSeconds": 38844,
+       "historicTrafficTravelTimeInSeconds": 39358,
+       "liveTrafficIncidentsTravelTimeInSeconds": 39342
+      },
+      "encodedPolyline": "eu`gEdtxmQGg@a@oCKk@_@_C[sBO}@RIJGDEf@k@fC_DROHGdB{BdB}BDEDENIJGLGJEf@UPKNITMXMRKXMKe@Io@Ce@ImCCk@IcBUuBUcBO_AI]Kg@c@iBa...[33486 chars]",
+      "encodedPolylinePrecision": 5
+     }
+    ],
+    "sections": [
+     {
+      "startPointIndex": 0,
+      "endPointIndex": 2,
+      "sectionType": "TRAVEL_MODE",
+      "travelMode": "other"
+     },
+     {
+      "startPointIndex": 37,
+      "endPointIndex": 403,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 414,
+      "endPointIndex": 9705,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 2,
+      "endPointIndex": 9778,
+      "sectionType": "TRAVEL_MODE",
+      "travelMode": "truck"
+     }
+    ],
+    "guidance": {
+     "instructions": [
+      {
+       "routeOffsetInMeters": 0,
+       "travelTimeInSeconds": 0,
+       "point": {
+        "latitude": 32.77667,
+        "longitude": -96.79699
+       },
+       "pointIndex": 0,
+       "instructionType": "LOCATION_DEPARTURE",
+       "street": "Marilla St",
+       "countryCode": "USA",
+       "stateCode": "TX",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "DEPART"
+      },
+      {
+       "routeOffsetInMeters": 89,
+       "travelTimeInSeconds": 58,
+       "point": {
+        "latitude": 32.77688,
+        "longitude": -96.79607
+       },
+       "pointIndex": 2,
+       "instructionType": "TURN",
+       "street": "Marilla St",
+       "countryCode": "USA",
+       "stateCode": "TX",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": 0,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "STRAIGHT"
+      },
+      {
+       "routeOffsetInMeters": 260,
+       "travelTimeInSeconds": 96,
+       "point": {
+        "latitude": 32.77732,
+        "longitude": -96.79432
+       },
+       "pointIndex": 6,
+       "instructionType": "TURN",
+       "street": "S Saint Paul St",
+       "countryCode": "USA",
+       "stateCode": "TX",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": 90,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_RIGHT"
+      },
+      {
+       "routeOffsetInMeters": 750,
+       "travelTimeInSeconds": 167,
+       "point": {
+        "latitude": 32.77391,
+        "longitude": -96.7911
+       },
+       "pointIndex": 28,
+       "instructionType": "TURN",
+       "roadNumbers": [
+        "I-45 S"
+       ],
+       "street": "Interstate Highway 45 S",
+       "countryCode": "USA",
+       "stateCode": "TX",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": -90,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_LEFT"
+      },
+      "...[42 instructions]",
+      {
+       "routeOffsetInMeters": 1261410,
+       "travelTimeInSeconds": 39286,
+       "point": {
+        "latitude": 33.74692,
+        "longitude": -84.38809
+       },
+       "pointIndex": 9763,
+       "instructionType": "TURN",
+       "street": "Capitol Ave SE",
+       "countryCode": "USA",
+       "stateCode": "GA",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": -90,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_LEFT"
+      },
+      {
+       "routeOffsetInMeters": 1261660,
+       "travelTimeInSeconds": 39342,
+       "point": {
+        "latitude": 33.74885,
+        "longitude": -84.38748
+       },
+       "pointIndex": 9778,
+       "instructionType": "LOCATION_ARRIVAL",
+       "street": "Capitol Ave SE",
+       "countryCode": "USA",
+       "stateCode": "GA",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "ARRIVE_LEFT"
+      }
+     ],
+     "instructionGroups": [
+      {
+       "firstInstructionIndex": 0,
+       "lastInstructionIndex": 8,
+       "groupLengthInMeters": 19761
+      },
+      {
+       "firstInstructionIndex": 9,
+       "lastInstructionIndex": 27,
+       "groupLengthInMeters": 976690
+      },
+      {
+       "firstInstructionIndex": 28,
+       "lastInstructionIndex": 29,
+       "groupLengthInMeters": 46733
+      },
+      {
+       "firstInstructionIndex": 30,
+       "lastInstructionIndex": 35,
+       "groupLengthInMeters": 216540
+      },
+      {
+       "firstInstructionIndex": 36,
+       "lastInstructionIndex": 41,
+       "groupLengthInMeters": 1936
+      }
+     ]
+    }
+   },
+   {
+    "summary": {
+     "lengthInMeters": 1342846,
+     "travelTimeInSeconds": 42427,
+     "trafficDelayInSeconds": 0,
+     "trafficLengthInMeters": 0,
+     "departureTime": "2026-11-02T02:00:00-06:00",
+     "arrivalTime": "2026-11-02T14:47:07-05:00",
+     "noTrafficTravelTimeInSeconds": 41747,
+     "historicTrafficTravelTimeInSeconds": 42444,
+     "liveTrafficIncidentsTravelTimeInSeconds": 42427,
+     "deviationDistance": 769,
+     "deviationTime": 178,
+     "deviationPoint": {
+      "latitude": 32.77397,
+      "longitude": -96.79091
+     }
+    },
+    "legs": [
+     {
+      "summary": {
+       "lengthInMeters": 1342846,
+       "travelTimeInSeconds": 42427,
+       "trafficDelayInSeconds": 0,
+       "trafficLengthInMeters": 0,
+       "departureTime": "2026-11-02T02:00:00-06:00",
+       "arrivalTime": "2026-11-02T14:47:07-05:00",
+       "noTrafficTravelTimeInSeconds": 41747,
+       "historicTrafficTravelTimeInSeconds": 42444,
+       "liveTrafficIncidentsTravelTimeInSeconds": 42427
+      },
+      "encodedPolyline": "eu`gEdtxmQGg@a@oCKk@_@_C[sBO}@RIJGDEf@k@fC_DROHGdB{BdB}BDEDENIJGLGJEf@UPKNITMXMRKXMKe@IWKOIKQQ]c@GIAAEMCQCSGeBCgAIeCEeAW...[38714 chars]",
+      "encodedPolylinePrecision": 5
+     }
+    ],
+    "sections": [
+     {
+      "startPointIndex": 0,
+      "endPointIndex": 2,
+      "sectionType": "TRAVEL_MODE",
+      "travelMode": "other"
+     },
+     {
+      "startPointIndex": 45,
+      "endPointIndex": 5537,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 5819,
+      "endPointIndex": 10949,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 2,
+      "endPointIndex": 11022,
+      "sectionType": "TRAVEL_MODE",
+      "travelMode": "truck"
+     }
+    ],
+    "guidance": {
+     "instructions": [
+      {
+       "routeOffsetInMeters": 0,
+       "travelTimeInSeconds": 0,
+       "point": {
+        "latitude": 32.77667,
+        "longitude": -96.79699
+       },
+       "pointIndex": 0,
+       "instructionType": "LOCATION_DEPARTURE",
+       "street": "Marilla St",
+       "countryCode": "USA",
+       "stateCode": "TX",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "DEPART"
+      },
+      {
+       "routeOffsetInMeters": 89,
+       "travelTimeInSeconds": 58,
+       "point": {
+        "latitude": 32.77688,
+        "longitude": -96.79607
+       },
+       "pointIndex": 2,
+       "instructionType": "TURN",
+       "street": "Marilla St",
+       "countryCode": "USA",
+       "stateCode": "TX",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": 0,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "STRAIGHT"
+      },
+      {
+       "routeOffsetInMeters": 260,
+       "travelTimeInSeconds": 96,
+       "point": {
+        "latitude": 32.77732,
+        "longitude": -96.79432
+       },
+       "pointIndex": 6,
+       "instructionType": "TURN",
+       "street": "S Saint Paul St",
+       "countryCode": "USA",
+       "stateCode": "TX",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": 90,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_RIGHT"
+      },
+      {
+       "routeOffsetInMeters": 750,
+       "travelTimeInSeconds": 167,
+       "point": {
+        "latitude": 32.77391,
+        "longitude": -96.7911
+       },
+       "pointIndex": 28,
+       "instructionType": "TURN",
+       "roadNumbers": [
+        "I-30 E",
+        "US-67 N"
+       ],
+       "street": "Interstate Highway 30 E",
+       "countryCode": "USA",
+       "stateCode": "TX",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": -90,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_LEFT"
+      },
+      "...[38 instructions]",
+      {
+       "routeOffsetInMeters": 1342596,
+       "travelTimeInSeconds": 42370,
+       "point": {
+        "latitude": 33.74692,
+        "longitude": -84.38809
+       },
+       "pointIndex": 11007,
+       "instructionType": "TURN",
+       "street": "Capitol Ave SE",
+       "countryCode": "USA",
+       "stateCode": "GA",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": -90,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_LEFT"
+      },
+      {
+       "routeOffsetInMeters": 1342846,
+       "travelTimeInSeconds": 42427,
+       "point": {
+        "latitude": 33.74885,
+        "longitude": -84.38748
+       },
+       "pointIndex": 11022,
+       "instructionType": "LOCATION_ARRIVAL",
+       "street": "Capitol Ave SE",
+       "countryCode": "USA",
+       "stateCode": "GA",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "ARRIVE_LEFT"
+      }
+     ],
+     "instructionGroups": [
+      {
+       "firstInstructionIndex": 0,
+       "lastInstructionIndex": 8,
+       "groupLengthInMeters": 507321
+      },
+      {
+       "firstInstructionIndex": 9,
+       "lastInstructionIndex": 13,
+       "groupLengthInMeters": 210817
+      },
+      {
+       "firstInstructionIndex": 14,
+       "lastInstructionIndex": 17,
+       "groupLengthInMeters": 24014
+      },
+      {
+       "firstInstructionIndex": 18,
+       "lastInstructionIndex": 31,
+       "groupLengthInMeters": 598758
+      },
+      {
+       "firstInstructionIndex": 32,
+       "lastInstructionIndex": 37,
+       "groupLengthInMeters": 1936
+      }
+     ]
+    }
+   },
+   {
+    "summary": {
+     "lengthInMeters": 1554491,
+     "travelTimeInSeconds": 47924,
+     "trafficDelayInSeconds": 0,
+     "trafficLengthInMeters": 0,
+     "departureTime": "2026-11-02T02:00:00-06:00",
+     "arrivalTime": "2026-11-02T16:18:44-05:00",
+     "noTrafficTravelTimeInSeconds": 47218,
+     "historicTrafficTravelTimeInSeconds": 47936,
+     "liveTrafficIncidentsTravelTimeInSeconds": 47924,
+     "deviationDistance": 769,
+     "deviationTime": 178,
+     "deviationPoint": {
+      "latitude": 32.77397,
+      "longitude": -96.79091
+     }
+    },
+    "legs": [
+     {
+      "summary": {
+       "lengthInMeters": 1554491,
+       "travelTimeInSeconds": 47924,
+       "trafficDelayInSeconds": 0,
+       "trafficLengthInMeters": 0,
+       "departureTime": "2026-11-02T02:00:00-06:00",
+       "arrivalTime": "2026-11-02T16:18:44-05:00",
+       "noTrafficTravelTimeInSeconds": 47218,
+       "historicTrafficTravelTimeInSeconds": 47936,
+       "liveTrafficIncidentsTravelTimeInSeconds": 47924
+      },
+      "encodedPolyline": "eu`gEdtxmQGg@a@oCKk@_@_C[sBO}@RIJGDEf@k@fC_DROHGdB{BdB}BDEDENIJGLGJEf@UPKNITMXMRKXMKe@IWKOIKQQ]c@GIAAEMCQCSGeBCgAIeCEeAW...[39753 chars]",
+      "encodedPolylinePrecision": 5
+     }
+    ],
+    "sections": [
+     {
+      "startPointIndex": 0,
+      "endPointIndex": 2,
+      "sectionType": "TRAVEL_MODE",
+      "travelMode": "other"
+     },
+     {
+      "startPointIndex": 45,
+      "endPointIndex": 11164,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 2,
+      "endPointIndex": 11230,
+      "sectionType": "TRAVEL_MODE",
+      "travelMode": "truck"
+     }
+    ],
+    "guidance": {
+     "instructions": [
+      {
+       "routeOffsetInMeters": 0,
+       "travelTimeInSeconds": 0,
+       "point": {
+        "latitude": 32.77667,
+        "longitude": -96.79699
+       },
+       "pointIndex": 0,
+       "instructionType": "LOCATION_DEPARTURE",
+       "street": "Marilla St",
+       "countryCode": "USA",
+       "stateCode": "TX",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "DEPART"
+      },
+      {
+       "routeOffsetInMeters": 89,
+       "travelTimeInSeconds": 58,
+       "point": {
+        "latitude": 32.77688,
+        "longitude": -96.79607
+       },
+       "pointIndex": 2,
+       "instructionType": "TURN",
+       "street": "Marilla St",
+       "countryCode": "USA",
+       "stateCode": "TX",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": 0,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "STRAIGHT"
+      },
+      {
+       "routeOffsetInMeters": 260,
+       "travelTimeInSeconds": 96,
+       "point": {
+        "latitude": 32.77732,
+        "longitude": -96.79432
+       },
+       "pointIndex": 6,
+       "instructionType": "TURN",
+       "street": "S Saint Paul St",
+       "countryCode": "USA",
+       "stateCode": "TX",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": 90,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_RIGHT"
+      },
+      {
+       "routeOffsetInMeters": 750,
+       "travelTimeInSeconds": 167,
+       "point": {
+        "latitude": 32.77391,
+        "longitude": -96.7911
+       },
+       "pointIndex": 28,
+       "instructionType": "TURN",
+       "roadNumbers": [
+        "I-30 E",
+        "US-67 N"
+       ],
+       "street": "Interstate Highway 30 E",
+       "countryCode": "USA",
+       "stateCode": "TX",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": -90,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_LEFT"
+      },
+      "...[54 instructions]",
+      {
+       "routeOffsetInMeters": 1553717,
+       "travelTimeInSeconds": 47760,
+       "point": {
+        "latitude": 33.7419,
+        "longitude": -84.38779
+       },
+       "pointIndex": 11193,
+       "instructionType": "TURN",
+       "street": "Capitol Ave SE",
+       "countryCode": "USA",
+       "stateCode": "GA",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": -90,
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_LEFT"
+      },
+      {
+       "routeOffsetInMeters": 1554491,
+       "travelTimeInSeconds": 47924,
+       "point": {
+        "latitude": 33.74885,
+        "longitude": -84.38748
+       },
+       "pointIndex": 11230,
+       "instructionType": "LOCATION_ARRIVAL",
+       "street": "Capitol Ave SE",
+       "countryCode": "USA",
+       "stateCode": "GA",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "ARRIVE_LEFT"
+      }
+     ],
+     "instructionGroups": [
+      {
+       "firstInstructionIndex": 0,
+       "lastInstructionIndex": 9,
+       "groupLengthInMeters": 287832
+      },
+      {
+       "firstInstructionIndex": 10,
+       "lastInstructionIndex": 14,
+       "groupLengthInMeters": 12204
+      },
+      {
+       "firstInstructionIndex": 15,
+       "lastInstructionIndex": 21,
+       "groupLengthInMeters": 324427
+      },
+      {
+       "firstInstructionIndex": 22,
+       "lastInstructionIndex": 26,
+       "groupLengthInMeters": 90918
+      },
+      {
+       "firstInstructionIndex": 27,
+       "lastInstructionIndex": 28,
+       "groupLengthInMeters": 174079
+      },
+      {
+       "firstInstructionIndex": 29,
+       "lastInstructionIndex": 30,
+       "groupLengthInMeters": 130235
+      },
+      {
+       "firstInstructionIndex": 31,
+       "lastInstructionIndex": 41,
+       "groupLengthInMeters": 275045
+      },
+      {
+       "firstInstructionIndex": 42,
+       "lastInstructionIndex": 48,
+       "groupLengthInMeters": 257627
+      },
+      {
+       "firstInstructionIndex": 49,
+       "lastInstructionIndex": 53,
+       "groupLengthInMeters": 2124
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

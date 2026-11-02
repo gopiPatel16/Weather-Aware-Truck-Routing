@@ -1,0 +1,712 @@
+{
+ "url": "https://api.tomtom.com/routing/1/calculateRoute/44.9778,-93.265:45.7833,-108.5007/json?travelMode=truck&routeType=fastest&traffic=true&maxAlternatives=2&departAt=2026-11-02T08:00:00Z&routeRepresentation=encodedPolyline&instructionsType=coded&sectionType=travelMode&sectionType=motorway&report=effectiveSettings&computeTravelTimeFor=all",
+ "ms": 3920,
+ "response": {
+  "formatVersion": "0.0.12",
+  "report": {
+   "effectiveSettings": [
+    {
+     "key": "computeBestOrder",
+     "value": "false"
+    },
+    {
+     "key": "computeTollAmounts",
+     "value": "none"
+    },
+    {
+     "key": "computeTravelTimeFor",
+     "value": "all"
+    },
+    {
+     "key": "contentType",
+     "value": "json"
+    },
+    {
+     "key": "departAt",
+     "value": "2026-11-02T08:00:00.000Z"
+    },
+    {
+     "key": "guidanceVersion",
+     "value": "1"
+    },
+    {
+     "key": "includeTollPaymentTypes",
+     "value": "none"
+    },
+    {
+     "key": "instructionsType",
+     "value": "coded"
+    },
+    {
+     "key": "language",
+     "value": "en-GB"
+    },
+    {
+     "key": "locations",
+     "value": "44.97780,-93.26500:45.78330,-108.50070"
+    },
+    {
+     "key": "maxAlternatives",
+     "value": "2"
+    },
+    {
+     "key": "maxPathAlternatives",
+     "value": "2"
+    },
+    {
+     "key": "routeRepresentation",
+     "value": "encodedPolyline"
+    },
+    {
+     "key": "routeType",
+     "value": "fastest"
+    },
+    {
+     "key": "sectionType",
+     "value": "motorway"
+    },
+    {
+     "key": "sectionType",
+     "value": "travelMode"
+    },
+    {
+     "key": "traffic",
+     "value": "true"
+    },
+    {
+     "key": "travelMode",
+     "value": "truck"
+    },
+    {
+     "key": "vehicleAxleWeight",
+     "value": "0"
+    },
+    {
+     "key": "vehicleCommercial",
+     "value": "false"
+    },
+    {
+     "key": "vehicleEngineType",
+     "value": "combustion"
+    },
+    {
+     "key": "vehicleHeight",
+     "value": "0.00"
+    },
+    {
+     "key": "vehicleLength",
+     "value": "0.00"
+    },
+    {
+     "key": "vehicleMaxSpeed",
+     "value": "0"
+    },
+    {
+     "key": "vehicleNumberOfAxles",
+     "value": "0"
+    },
+    {
+     "key": "vehicleWeight",
+     "value": "0"
+    },
+    {
+     "key": "vehicleWidth",
+     "value": "0.00"
+    }
+   ]
+  },
+  "routes": [
+   {
+    "summary": {
+     "lengthInMeters": 1357001,
+     "travelTimeInSeconds": 40733,
+     "trafficDelayInSeconds": 0,
+     "trafficLengthInMeters": 0,
+     "departureTime": "2026-11-02T02:00:00-06:00",
+     "arrivalTime": "2026-11-02T12:18:53-07:00",
+     "noTrafficTravelTimeInSeconds": 40468,
+     "historicTrafficTravelTimeInSeconds": 40736,
+     "liveTrafficIncidentsTravelTimeInSeconds": 40733
+    },
+    "legs": [
+     {
+      "summary": {
+       "lengthInMeters": 1357001,
+       "travelTimeInSeconds": 40733,
+       "trafficDelayInSeconds": 0,
+       "trafficLengthInMeters": 0,
+       "departureTime": "2026-11-02T02:00:00-06:00",
+       "arrivalTime": "2026-11-02T12:18:53-07:00",
+       "noTrafficTravelTimeInSeconds": 40468,
+       "historicTrafficTravelTimeInSeconds": 40736,
+       "liveTrafficIncidentsTravelTimeInSeconds": 40733
+      },
+      "encodedPolyline": "avoqGlyfxPv@cCtBmGp@wBj@cBVs@Po@b@uAz@mCbBmFDSBQAgAAe@@mAHg@FWPe@HWHQRk@V{@Z{@DOd@iAN[T[f@c@|@o@n@e@PQJK\\a@^m@PWJUHYNg@N...[32987 chars]",
+      "encodedPolylinePrecision": 5
+     }
+    ],
+    "sections": [
+     {
+      "startPointIndex": 52,
+      "endPointIndex": 9218,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 0,
+      "endPointIndex": 9357,
+      "sectionType": "TRAVEL_MODE",
+      "travelMode": "truck"
+     }
+    ],
+    "guidance": {
+     "instructions": [
+      {
+       "routeOffsetInMeters": 0,
+       "travelTimeInSeconds": 0,
+       "point": {
+        "latitude": 44.97777,
+        "longitude": -93.26503
+       },
+       "pointIndex": 0,
+       "instructionType": "LOCATION_DEPARTURE",
+       "street": "4th St S",
+       "countryCode": "USA",
+       "stateCode": "MN",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "DEPART"
+      },
+      {
+       "routeOffsetInMeters": 1015,
+       "travelTimeInSeconds": 161,
+       "point": {
+        "latitude": 44.97294,
+        "longitude": -93.25453
+       },
+       "pointIndex": 33,
+       "instructionType": "TURN",
+       "roadNumbers": [
+        "I-94 W",
+        "US-52 W",
+        "US-12 W",
+        "MN-55 W"
+       ],
+       "street": "United States Highway 12 W",
+       "countryCode": "USA",
+       "stateCode": "MN",
+       "junctionType": "BIFURCATION",
+       "turnAngleInDecimalDegrees": 45,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "KEEP_RIGHT"
+      },
+      {
+       "routeOffsetInMeters": 1594,
+       "travelTimeInSeconds": 203,
+       "point": {
+        "latitude": 44.96889,
+        "longitude": -93.25431
+       },
+       "pointIndex": 58,
+       "instructionType": "TURN",
+       "roadNumbers": [
+        "I-94 W",
+        "US-52 W",
+        "US-12 W",
+        "MN-55 W"
+       ],
+       "street": "United States Highway 12 W",
+       "countryCode": "USA",
+       "stateCode": "MN",
+       "junctionType": "BIFURCATION",
+       "turnAngleInDecimalDegrees": 45,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "KEEP_RIGHT"
+      },
+      {
+       "routeOffsetInMeters": 1630,
+       "travelTimeInSeconds": 205,
+       "point": {
+        "latitude": 44.96859,
+        "longitude": -93.25446
+       },
+       "pointIndex": 59,
+       "instructionType": "TURN",
+       "roadNumbers": [
+        "I-94 W",
+        "US-52 W",
+        "US-12 W",
+        "MN-55 W"
+       ],
+       "street": "United States Highway 12 W",
+       "countryCode": "USA",
+       "stateCode": "MN",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": 45,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "MOTORWAY_EXIT_RIGHT"
+      },
+      "...[23 instructions]",
+      {
+       "routeOffsetInMeters": 1356953,
+       "travelTimeInSeconds": 40716,
+       "point": {
+        "latitude": 45.78303,
+        "longitude": -108.50118
+       },
+       "pointIndex": 9354,
+       "instructionType": "TURN",
+       "roadNumbers": [
+        "I-90 Bus E"
+       ],
+       "street": "Montana Ave",
+       "countryCode": "USA",
+       "stateCode": "MT",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": -90,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_LEFT"
+      },
+      {
+       "routeOffsetInMeters": 1357001,
+       "travelTimeInSeconds": 40733,
+       "point": {
+        "latitude": 45.78328,
+        "longitude": -108.50068
+       },
+       "pointIndex": 9357,
+       "instructionType": "LOCATION_ARRIVAL",
+       "roadNumbers": [
+        "I-90 Bus E"
+       ],
+       "street": "Montana Ave",
+       "countryCode": "USA",
+       "stateCode": "MT",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "ARRIVE_LEFT"
+      }
+     ],
+     "instructionGroups": [
+      {
+       "firstInstructionIndex": 0,
+       "lastInstructionIndex": 15,
+       "groupLengthInMeters": 1352517
+      },
+      {
+       "firstInstructionIndex": 16,
+       "lastInstructionIndex": 22,
+       "groupLengthInMeters": 4484
+      }
+     ]
+    }
+   },
+   {
+    "summary": {
+     "lengthInMeters": 1522138,
+     "travelTimeInSeconds": 46868,
+     "trafficDelayInSeconds": 0,
+     "trafficLengthInMeters": 0,
+     "departureTime": "2026-11-02T02:00:00-06:00",
+     "arrivalTime": "2026-11-02T14:01:08-07:00",
+     "noTrafficTravelTimeInSeconds": 47088,
+     "historicTrafficTravelTimeInSeconds": 47157,
+     "liveTrafficIncidentsTravelTimeInSeconds": 46868,
+     "deviationDistance": 61,
+     "deviationTime": 17,
+     "deviationPoint": {
+      "latitude": 44.97749,
+      "longitude": -93.26437
+     }
+    },
+    "legs": [
+     {
+      "summary": {
+       "lengthInMeters": 1522138,
+       "travelTimeInSeconds": 46868,
+       "trafficDelayInSeconds": 0,
+       "trafficLengthInMeters": 0,
+       "departureTime": "2026-11-02T02:00:00-06:00",
+       "arrivalTime": "2026-11-02T14:01:08-07:00",
+       "noTrafficTravelTimeInSeconds": 47088,
+       "historicTrafficTravelTimeInSeconds": 47157,
+       "liveTrafficIncidentsTravelTimeInSeconds": 46868
+      },
+      "encodedPolyline": "avoqGlyfxPv@cCpAbAvBdBZTrAbAhAx@`BtAzApAdBnA~AnAjBxAVP|@r@dBrAxAhA`@C~@?fCVr@NJ@D@b@H`@Nx@XPHx@Rj@FnBB`@@V@l@AjBFX@zA?j@...[39794 chars]",
+      "encodedPolylinePrecision": 5
+     }
+    ],
+    "sections": [
+     {
+      "startPointIndex": 44,
+      "endPointIndex": 686,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 1468,
+      "endPointIndex": 1569,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 1812,
+      "endPointIndex": 1882,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 1978,
+      "endPointIndex": 2065,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 2763,
+      "endPointIndex": 11356,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 0,
+      "endPointIndex": 11421,
+      "sectionType": "TRAVEL_MODE",
+      "travelMode": "truck"
+     }
+    ],
+    "guidance": {
+     "instructions": [
+      {
+       "routeOffsetInMeters": 0,
+       "travelTimeInSeconds": 0,
+       "point": {
+        "latitude": 44.97777,
+        "longitude": -93.26503
+       },
+       "pointIndex": 0,
+       "instructionType": "LOCATION_DEPARTURE",
+       "street": "4th St S",
+       "countryCode": "USA",
+       "stateCode": "MN",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "DEPART"
+      },
+      {
+       "routeOffsetInMeters": 61,
+       "travelTimeInSeconds": 17,
+       "point": {
+        "latitude": 44.97749,
+        "longitude": -93.26437
+       },
+       "pointIndex": 1,
+       "instructionType": "TURN",
+       "roadNumbers": [
+        "MN-65"
+       ],
+       "street": "4th Ave S",
+       "countryCode": "USA",
+       "stateCode": "MN",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": 90,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_RIGHT"
+      },
+      {
+       "routeOffsetInMeters": 810,
+       "travelTimeInSeconds": 141,
+       "point": {
+        "latitude": 44.97168,
+        "longitude": -93.26919
+       },
+       "pointIndex": 15,
+       "instructionType": "TURN",
+       "roadNumbers": [
+        "MN-65"
+       ],
+       "street": "State Highway 65",
+       "countryCode": "USA",
+       "stateCode": "MN",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": -45,
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "BEAR_LEFT"
+      },
+      {
+       "routeOffsetInMeters": 1075,
+       "travelTimeInSeconds": 168,
+       "point": {
+        "latitude": 44.96934,
+        "longitude": -93.26972
+       },
+       "pointIndex": 25,
+       "instructionType": "DIRECTION_INFO",
+       "roadNumbers": [
+        "MN-65"
+       ],
+       "street": "State Highway 65",
+       "countryCode": "USA",
+       "stateCode": "MN",
+       "signpostText": "Diamond Lake Road",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "FOLLOW"
+      },
+      "...[30 instructions]",
+      {
+       "routeOffsetInMeters": 1521739,
+       "travelTimeInSeconds": 46815,
+       "point": {
+        "latitude": 45.78124,
+        "longitude": -108.50491
+       },
+       "pointIndex": 11406,
+       "instructionType": "TURN",
+       "roadNumbers": [
+        "I-90 Bus E"
+       ],
+       "street": "Montana Ave",
+       "countryCode": "USA",
+       "stateCode": "MT",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": 90,
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_RIGHT"
+      },
+      {
+       "routeOffsetInMeters": 1522138,
+       "travelTimeInSeconds": 46868,
+       "point": {
+        "latitude": 45.78328,
+        "longitude": -108.50068
+       },
+       "pointIndex": 11421,
+       "instructionType": "LOCATION_ARRIVAL",
+       "roadNumbers": [
+        "I-90 Bus E"
+       ],
+       "street": "Montana Ave",
+       "countryCode": "USA",
+       "stateCode": "MT",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "ARRIVE_LEFT"
+      }
+     ],
+     "instructionGroups": [
+      {
+       "firstInstructionIndex": 0,
+       "lastInstructionIndex": 16,
+       "groupLengthInMeters": 279051
+      },
+      {
+       "firstInstructionIndex": 17,
+       "lastInstructionIndex": 23,
+       "groupLengthInMeters": 1240164
+      },
+      {
+       "firstInstructionIndex": 24,
+       "lastInstructionIndex": 29,
+       "groupLengthInMeters": 2923
+      }
+     ]
+    }
+   },
+   {
+    "summary": {
+     "lengthInMeters": 2135624,
+     "travelTimeInSeconds": 64392,
+     "trafficDelayInSeconds": 0,
+     "trafficLengthInMeters": 0,
+     "departureTime": "2026-11-02T02:00:00-06:00",
+     "arrivalTime": "2026-11-02T18:53:12-07:00",
+     "noTrafficTravelTimeInSeconds": 64230,
+     "historicTrafficTravelTimeInSeconds": 64398,
+     "liveTrafficIncidentsTravelTimeInSeconds": 64392,
+     "deviationDistance": 61,
+     "deviationTime": 17,
+     "deviationPoint": {
+      "latitude": 44.97749,
+      "longitude": -93.26437
+     }
+    },
+    "legs": [
+     {
+      "summary": {
+       "lengthInMeters": 2135624,
+       "travelTimeInSeconds": 64392,
+       "trafficDelayInSeconds": 0,
+       "trafficLengthInMeters": 0,
+       "departureTime": "2026-11-02T02:00:00-06:00",
+       "arrivalTime": "2026-11-02T18:53:12-07:00",
+       "noTrafficTravelTimeInSeconds": 64230,
+       "historicTrafficTravelTimeInSeconds": 64398,
+       "liveTrafficIncidentsTravelTimeInSeconds": 64392
+      },
+      "encodedPolyline": "avoqGlyfxPv@cCpAbAvBdBZTrAbAhAx@`BtAzApAdBnA~AnAjBxAVP|@r@dBrAxAhA`@C~@?fCVr@NJ@D@b@H`@Nx@XPHx@Rj@FnBB`@@V@l@AjBFX@zA?j@...[49203 chars]",
+      "encodedPolylinePrecision": 5
+     }
+    ],
+    "sections": [
+     {
+      "startPointIndex": 44,
+      "endPointIndex": 14065,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 0,
+      "endPointIndex": 14204,
+      "sectionType": "TRAVEL_MODE",
+      "travelMode": "truck"
+     }
+    ],
+    "guidance": {
+     "instructions": [
+      {
+       "routeOffsetInMeters": 0,
+       "travelTimeInSeconds": 0,
+       "point": {
+        "latitude": 44.97777,
+        "longitude": -93.26503
+       },
+       "pointIndex": 0,
+       "instructionType": "LOCATION_DEPARTURE",
+       "street": "4th St S",
+       "countryCode": "USA",
+       "stateCode": "MN",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "DEPART"
+      },
+      {
+       "routeOffsetInMeters": 61,
+       "travelTimeInSeconds": 17,
+       "point": {
+        "latitude": 44.97749,
+        "longitude": -93.26437
+       },
+       "pointIndex": 1,
+       "instructionType": "TURN",
+       "roadNumbers": [
+        "MN-65"
+       ],
+       "street": "4th Ave S",
+       "countryCode": "USA",
+       "stateCode": "MN",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": 90,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_RIGHT"
+      },
+      {
+       "routeOffsetInMeters": 810,
+       "travelTimeInSeconds": 141,
+       "point": {
+        "latitude": 44.97168,
+        "longitude": -93.26919
+       },
+       "pointIndex": 15,
+       "instructionType": "TURN",
+       "roadNumbers": [
+        "MN-65"
+       ],
+       "street": "State Highway 65",
+       "countryCode": "USA",
+       "stateCode": "MN",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": -45,
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "BEAR_LEFT"
+      },
+      {
+       "routeOffsetInMeters": 1075,
+       "travelTimeInSeconds": 168,
+       "point": {
+        "latitude": 44.96934,
+        "longitude": -93.26972
+       },
+       "pointIndex": 25,
+       "instructionType": "DIRECTION_INFO",
+       "roadNumbers": [
+        "MN-65"
+       ],
+       "street": "State Highway 65",
+       "countryCode": "USA",
+       "stateCode": "MN",
+       "signpostText": "Diamond Lake Road",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "FOLLOW"
+      },
+      "...[42 instructions]",
+      {
+       "routeOffsetInMeters": 2135576,
+       "travelTimeInSeconds": 64376,
+       "point": {
+        "latitude": 45.78303,
+        "longitude": -108.50118
+       },
+       "pointIndex": 14201,
+       "instructionType": "TURN",
+       "roadNumbers": [
+        "I-90 Bus E"
+       ],
+       "street": "Montana Ave",
+       "countryCode": "USA",
+       "stateCode": "MT",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": -90,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_LEFT"
+      },
+      {
+       "routeOffsetInMeters": 2135624,
+       "travelTimeInSeconds": 64392,
+       "point": {
+        "latitude": 45.78328,
+        "longitude": -108.50068
+       },
+       "pointIndex": 14204,
+       "instructionType": "LOCATION_ARRIVAL",
+       "roadNumbers": [
+        "I-90 Bus E"
+       ],
+       "street": "Montana Ave",
+       "countryCode": "USA",
+       "stateCode": "MT",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "ARRIVE_LEFT"
+      }
+     ],
+     "instructionGroups": [
+      {
+       "firstInstructionIndex": 0,
+       "lastInstructionIndex": 10,
+       "groupLengthInMeters": 32586
+      },
+      {
+       "firstInstructionIndex": 11,
+       "lastInstructionIndex": 22,
+       "groupLengthInMeters": 1371483
+      },
+      {
+       "firstInstructionIndex": 23,
+       "lastInstructionIndex": 38,
+       "groupLengthInMeters": 731392
+      },
+      {
+       "firstInstructionIndex": 39,
+       "lastInstructionIndex": 41,
+       "groupLengthInMeters": 163
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

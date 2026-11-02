@@ -1,0 +1,267 @@
+{
+ "summary": {
+  "query": "1600 pennsylvania",
+  "queryType": "NON_NEAR",
+  "queryTime": 67,
+  "numResults": 5,
+  "offset": 0,
+  "totalResults": 100,
+  "fuzzyLevel": 1,
+  "queryIntent": []
+ },
+ "results": [
+  {
+   "type": "POI",
+   "id": "hzeidno4uH1bvgygmNVU2w",
+   "score": 4.2831697464,
+   "info": "search:ta:840118000040733-US",
+   "poi": {
+    "name": "1600 Pennsylvania Avenue SE Apartments",
+    "phone": "+1 202-831-0308",
+    "categorySet": [
+     {
+      "id": 7303003
+     }
+    ],
+    "url": "www.liveat1600penn.com",
+    "categories": [
+     "flats/apartment complex",
+     "residential accommodation"
+    ],
+    "classifications": [
+     {
+      "code": "RESIDENTIAL_ACCOMMODATION",
+      "names": [
+       {
+        "nameLocale": "en-US",
+        "name": "flats/apartment complex"
+       },
+       {
+        "nameLocale": "en-US",
+        "name": "residential accommodation"
+       }
+      ]
+     }
+    ]
+   },
+   "address": {
+    "streetNumber": "1600",
+    "streetName": "Pennsylvania Avenue Southeast",
+    "municipality": "Washington",
+    "neighbourhood": "Barney Circle",
+    "countrySecondarySubdivision": "District of Columbia",
+    "countrySubdivision": "DC",
+    "countrySubdivisionName": "District of Columbia",
+    "countrySubdivisionCode": "DC",
+    "postalCode": "20003",
+    "extendedPostalCode": "20003-3116",
+    "countryCode": "US",
+    "country": "United States",
+    "countryCodeISO3": "USA",
+    "freeformAddress": "1600 Pennsylvania Avenue Southeast, Washington, DC 20003",
+    "localName": "Washington"
+   },
+   "position": {
+    "lat": 38.879213,
+    "lon": -76.981976
+   },
+   "viewport": {
+    "topLeftPoint": {
+     "lat": 38.88011,
+     "lon": -76.98313
+    },
+    "btmRightPoint": {
+     "lat": 38.87831,
+     "lon": -76.98082
+    }
+   },
+   "entryPoints": [
+    {
+     "type": "main",
+     "position": {
+      "lat": 38.87906,
+      "lon": -76.98208
+     }
+    }
+   ]
+  },
+  {
+   "type": "Point Address",
+   "id": "PGFz1zQptZkY60-2zOiWsw",
+   "score": 3.9368002415,
+   "address": {
+    "streetNumber": "1600",
+    "streetName": "Pennsylvania Avenue",
+    "municipality": "Los Angeles",
+    "neighbourhood": "Boyle Heights",
+    "countrySecondarySubdivision": "Los Angeles",
+    "countrySubdivision": "CA",
+    "countrySubdivisionName": "California",
+    "countrySubdivisionCode": "CA",
+    "postalCode": "90033",
+    "extendedPostalCode": "90033-2404",
+    "countryCode": "US",
+    "country": "United States",
+    "countryCodeISO3": "USA",
+    "freeformAddress": "1600 Pennsylvania Avenue, Los Angeles, CA 90033",
+    "localName": "Los Angeles"
+   },
+   "position": {
+    "lat": 34.049093,
+    "lon": -118.220304
+   },
+   "viewport": {
+    "topLeftPoint": {
+     "lat": 34.04999,
+     "lon": -118.22139
+    },
+    "btmRightPoint": {
+     "lat": 34.04819,
+     "lon": -118.21922
+    }
+   },
+   "entryPoints": [
+    {
+     "type": "main",
+     "position": {
+      "lat": 34.04926,
+      "lon": -118.22015
+     }
+    }
+   ]
+  },
+  {
+   "type": "Point Address",
+   "id": "VBYkSz5CgfYWI4zVdShQIw",
+   "score": 3.9368002415,
+   "address": {
+    "streetNumber": "1600",
+    "streetName": "Pennsylvania Avenue",
+    "municipality": "Miami Beach",
+    "countrySecondarySubdivision": "Miami-Dade",
+    "countrySubdivision": "FL",
+    "countrySubdivisionName": "Florida",
+    "countrySubdivisionCode": "FL",
+    "postalCode": "33139",
+    "extendedPostalCode": "33139-7713",
+    "countryCode": "US",
+    "country": "United States",
+    "countryCodeISO3": "USA",
+    "freeformAddress": "1600 Pennsylvania Avenue, Miami Beach, FL 33139",
+    "localName": "Miami Beach"
+   },
+   "position": {
+    "lat": 25.789245,
+    "lon": -80.13459
+   },
+   "viewport": {
+    "topLeftPoint": {
+     "lat": 25.79014,
+     "lon": -80.13559
+    },
+    "btmRightPoint": {
+     "lat": 25.78835,
+     "lon": -80.13359
+    }
+   },
+   "entryPoints": [
+    {
+     "type": "main",
+     "position": {
+      "lat": 25.78926,
+      "lon": -80.13424
+     }
+    }
+   ]
+  },
+  {
+   "type": "Point Address",
+   "id": "EpbAGz5b7P2btZXIflrjYg",
+   "score": 3.9368002415,
+   "address": {
+    "streetNumber": "1600",
+    "streetName": "South Pennsylvania Avenue",
+    "municipality": "Winter Park",
+    "countrySecondarySubdivision": "Orange",
+    "countrySubdivision": "FL",
+    "countrySubdivisionName": "Florida",
+    "countrySubdivisionCode": "FL",
+    "postalCode": "32789",
+    "extendedPostalCode": "32789-5728",
+    "countryCode": "US",
+    "country": "United States",
+    "countryCodeISO3": "USA",
+    "freeformAddress": "1600 South Pennsylvania Avenue, Winter Park, FL 32789",
+    "localName": "Winter Park"
+   },
+   "position": {
+    "lat": 28.583673,
+    "lon": -81.353757
+   },
+   "viewport": {
+    "topLeftPoint": {
+     "lat": 28.58457,
+     "lon": -81.35478
+    },
+    "btmRightPoint": {
+     "lat": 28.58277,
+     "lon": -81.35273
+    }
+   },
+   "entryPoints": [
+    {
+     "type": "main",
+     "position": {
+      "lat": 28.58345,
+      "lon": -81.35395
+     }
+    }
+   ]
+  },
+  {
+   "type": "Point Address",
+   "id": "9rgBs1cmemki6ZoKt_9V2w",
+   "score": 3.9368002415,
+   "address": {
+    "streetNumber": "1600",
+    "streetName": "South Pennsylvania Street",
+    "municipality": "Denver",
+    "neighbourhood": "Platt Park",
+    "countrySecondarySubdivision": "Denver",
+    "countrySubdivision": "CO",
+    "countrySubdivisionName": "Colorado",
+    "countrySubdivisionCode": "CO",
+    "postalCode": "80210",
+    "extendedPostalCode": "80210-2638",
+    "countryCode": "US",
+    "country": "United States",
+    "countryCodeISO3": "USA",
+    "freeformAddress": "1600 South Pennsylvania Street, Denver, CO 80210",
+    "localName": "Denver"
+   },
+   "position": {
+    "lat": 39.687454,
+    "lon": -104.981264
+   },
+   "viewport": {
+    "topLeftPoint": {
+     "lat": 39.68835,
+     "lon": -104.98243
+    },
+    "btmRightPoint": {
+     "lat": 39.68655,
+     "lon": -104.9801
+    }
+   },
+   "entryPoints": [
+    {
+     "type": "main",
+     "position": {
+      "lat": 39.68747,
+      "lon": -104.98157
+     }
+    }
+   ]
+  }
+ ]
+}

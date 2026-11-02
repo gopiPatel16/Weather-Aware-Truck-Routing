@@ -2,9 +2,7 @@
 
 Helps a truck driver choose a safer route from **weather, cargo weight and travel time**. React + TypeScript frontend, Django REST backend, a truck-routing API, an hourly forecast API and a MapLibre map.
 
-> **Build status** (details: [`docs/ACCEPTANCE.md`](docs/ACCEPTANCE.md))
-> Backend domain, weather client, planner and API are built and tested (254 tests, 98 % domain coverage). **Pending:** TomTom live verification (needs a free API key), the frontend, deployment, Loom.
-> The full specification is [`docs/PLAN.md`](docs/PLAN.md); provider evidence is [`docs/spike/SPIKE_REPORT.md`](docs/spike/SPIKE_REPORT.md).
+> **Status:** backend (273 tests, 96 % coverage) and frontend (80 tests) are complete and verified against the live TomTom and Open-Meteo APIs. Evidence for every requirement: [`docs/ACCEPTANCE.md`](docs/ACCEPTANCE.md). Specification: [`docs/PLAN.md`](docs/PLAN.md). Provider evidence: [`docs/spike/SPIKE_REPORT.md`](docs/spike/SPIKE_REPORT.md). Measured numbers: [`docs/PERFORMANCE.md`](docs/PERFORMANCE.md). Demo script: [`docs/WALKTHROUGH.md`](docs/WALKTHROUGH.md).
 
 ## What it does
 
@@ -41,19 +39,42 @@ Helps a truck driver choose a safer route from **weather, cargo weight and trave
 - ETAs assume continuous driving at the routing provider's truck speeds with typical traffic — no rest breaks or fuel stops. If the provider gives no timing data the ETAs are flagged "estimated from average speed".
 - Only wind, rain and snow are modelled (no ice, fog or visibility). Wind means sustained 10 m speed (gusts are shown for information).
 - Forecast reliability drops with lead time, so departure is limited to 7 days ahead. The app is US-unit based (mph, in/hr, lb).
-- The free Open-Meteo API is for **non-commercial** use; commercial use needs a paid plan.
+- The free Open-Meteo API is for **non-commercial** use; commercial use needs a paid plan. It also allows about 600 locations per minute per IP, and every checkpoint and heatmap cell counts as one location. Several plans in a minute, or a 10-mile interval on a long trip, can exceed that; the affected checkpoints then become **Unknown** and the app says the recommendation cannot be determined instead of guessing. Repeat requests are cached for 30 minutes.
+- TomTom answers take about 4–6 s for 1000-mile trips with alternatives, so a first plan takes roughly 6–10 s; repeats of the same trip are served in about a second.
 
 ## Run locally (Windows PowerShell)
+
+Backend (needs a free TomTom key from [developer.tomtom.com](https://developer.tomtom.com), no credit card):
 
 ```powershell
 cd backend
 python -m venv .venv
 .\.venv\Scripts\python -m pip install -r requirements-dev.txt
-copy .env.example .env        # then add TOMTOM_API_KEY (free, no card: developer.tomtom.com)
-.\.venv\Scripts\python manage.py runserver     # http://localhost:8000/api/docs/
-.\.venv\Scripts\python -m pytest               # tests
+copy .env.example .env        # then set TOMTOM_API_KEY in .env
+.\.venv\Scripts\python manage.py runserver     # API on http://localhost:8000, docs at /api/docs/
+.\.venv\Scripts\python -m pytest               # 273 tests
 ```
-Without a TomTom key the API starts, but `/api/plan` answers "Routing is not configured". For a demo without real weather set `WEATHER_PROVIDER=mock` (synthetic storm, labelled as demo data).
+
+Frontend (Node 22.12+):
+
+```powershell
+cd frontend
+npm ci
+npm run dev          # http://localhost:5173, proxies /api to the backend
+npm run dev:mock     # no backend: fixture scenarios with a picker in the header
+npm run lint ; npm run typecheck ; npm test ; npm run build
+```
+
+More frontend detail (mock scenarios, pinned versions, accessibility): [`frontend/README.md`](frontend/README.md).
+
+Notes:
+- Without a TomTom key the API starts, but `/api/plan` answers "Routing is not configured". For a demo without real weather set `WEATHER_PROVIDER=mock` (synthetic storm, labelled as demo data).
+- If HTTPS calls fail with `CERTIFICATE_VERIFY_FAILED` (antivirus or a proxy re-signing traffic), set `USE_SYSTEM_CA_STORE=1` in `backend/.env`. Certificate checks stay on; the operating system's trust store is used.
+- Keys are read from the environment only and are never logged.
+
+## Production image
+
+`Dockerfile` builds the React app and serves it, together with the API, from one container (`gunicorn --workers 1 --threads 8`). `render.yaml` is a Render blueprint; set `TOMTOM_API_KEY` in the dashboard.
 
 ## API
 

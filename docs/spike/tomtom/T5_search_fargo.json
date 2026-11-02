@@ -1,0 +1,337 @@
+{
+ "summary": {
+  "query": "fargo n",
+  "queryType": "NON_NEAR",
+  "queryTime": 43,
+  "numResults": 5,
+  "offset": 0,
+  "totalResults": 100,
+  "fuzzyLevel": 1,
+  "queryIntent": []
+ },
+ "results": [
+  {
+   "type": "Geography",
+   "id": "4Wu2X-Nv7SAf8WE9gi7Omw",
+   "score": 4.6742544174,
+   "entityType": "Municipality",
+   "address": {
+    "municipality": "Fargo",
+    "countrySecondarySubdivision": "Cass",
+    "countrySubdivision": "ND",
+    "countrySubdivisionName": "North Dakota",
+    "countrySubdivisionCode": "ND",
+    "countryCode": "US",
+    "country": "United States",
+    "countryCodeISO3": "USA",
+    "freeformAddress": "Fargo, ND"
+   },
+   "position": {
+    "lat": 46.876959,
+    "lon": -96.784636
+   },
+   "viewport": {
+    "topLeftPoint": {
+     "lat": 46.98432,
+     "lon": -96.90385
+    },
+    "btmRightPoint": {
+     "lat": 46.70289,
+     "lon": -96.75271
+    }
+   },
+   "boundingBox": {
+    "topLeftPoint": {
+     "lat": 46.98432,
+     "lon": -96.903853
+    },
+    "btmRightPoint": {
+     "lat": 46.702894,
+     "lon": -96.752709
+    }
+   },
+   "dataSources": {
+    "geometry": {
+     "id": "0000554e-4400-3c00-0000-000059698ebb"
+    }
+   }
+  },
+  {
+   "type": "Geography",
+   "id": "lDPuI5UgKQoD8tx3ak4Fiw",
+   "score": 4.5950293541,
+   "entityType": "Municipality",
+   "address": {
+    "municipality": "West Fargo",
+    "countrySecondarySubdivision": "Cass",
+    "countrySubdivision": "ND",
+    "countrySubdivisionName": "North Dakota",
+    "countrySubdivisionCode": "ND",
+    "countryCode": "US",
+    "country": "United States",
+    "countryCodeISO3": "USA",
+    "freeformAddress": "West Fargo, ND"
+   },
+   "position": {
+    "lat": 46.872766,
+    "lon": -96.904013
+   },
+   "viewport": {
+    "topLeftPoint": {
+     "lat": 46.90619,
+     "lon": -96.96056
+    },
+    "btmRightPoint": {
+     "lat": 46.79344,
+     "lon": -96.86166
+    }
+   },
+   "boundingBox": {
+    "topLeftPoint": {
+     "lat": 46.906187,
+     "lon": -96.960557
+    },
+    "btmRightPoint": {
+     "lat": 46.793442,
+     "lon": -96.861657
+    }
+   },
+   "dataSources": {
+    "geometry": {
+     "id": "0000554e-4400-3c00-0000-0000596875d2"
+    }
+   }
+  },
+  {
+   "type": "POI",
+   "id": "4rJEk-m8cWIVOSlgzC-ncw",
+   "score": 4.3663377762,
+   "info": "search:ta:840388000028423-US",
+   "poi": {
+    "name": "Fargo North Dakota",
+    "phone": "+1 701-282-2240",
+    "categorySet": [
+     {
+      "id": 7314003
+     }
+    ],
+    "categories": [
+     "hotel",
+     "hotel/motel"
+    ],
+    "classifications": [
+     {
+      "code": "HOTEL_MOTEL",
+      "names": [
+       {
+        "nameLocale": "en-US",
+        "name": "hotel/motel"
+       },
+       {
+        "nameLocale": "en-US",
+        "name": "hotel"
+       }
+      ]
+     }
+    ]
+   },
+   "address": {
+    "streetNumber": "4335",
+    "streetName": "23rd Avenue South",
+    "municipality": "Fargo",
+    "neighbourhood": "Anderson Park",
+    "countrySecondarySubdivision": "Cass",
+    "countrySubdivision": "ND",
+    "countrySubdivisionName": "North Dakota",
+    "countrySubdivisionCode": "ND",
+    "postalCode": "58104",
+    "extendedPostalCode": "58104-8727",
+    "countryCode": "US",
+    "country": "United States",
+    "countryCodeISO3": "USA",
+    "freeformAddress": "4335 23rd Avenue South, Fargo, ND 58104",
+    "localName": "Fargo"
+   },
+   "position": {
+    "lat": 46.84462,
+    "lon": -96.85791
+   },
+   "viewport": {
+    "topLeftPoint": {
+     "lat": 46.84552,
+     "lon": -96.85922
+    },
+    "btmRightPoint": {
+     "lat": 46.84372,
+     "lon": -96.8566
+    }
+   },
+   "entryPoints": [
+    {
+     "type": "main",
+     "position": {
+      "lat": 46.84404,
+      "lon": -96.85792
+     }
+    },
+    {
+     "type": "minor",
+     "position": {
+      "lat": 46.84482,
+      "lon": -96.85791
+     }
+    }
+   ]
+  },
+  {
+   "type": "POI",
+   "id": "NmtfmF23nw7ckHOMFQU62g",
+   "score": 4.2831697464,
+   "info": "search:ta:840386000038823-US",
+   "poi": {
+    "name": "@ Nails Salon Fargo North Dakota",
+    "phone": "+1 701-356-5252",
+    "categorySet": [
+     {
+      "id": 9361068
+     }
+    ],
+    "url": "www.atnailswestfargo.com",
+    "categories": [
+     "nail salon",
+     "shop"
+    ],
+    "classifications": [
+     {
+      "code": "SHOP",
+      "names": [
+       {
+        "nameLocale": "en-US",
+        "name": "nail salon"
+       },
+       {
+        "nameLocale": "en-US",
+        "name": "shop"
+       }
+      ]
+     }
+    ]
+   },
+   "address": {
+    "streetNumber": "3163",
+    "streetName": "Blue Stem Drive",
+    "municipality": "West Fargo",
+    "countrySecondarySubdivision": "Cass",
+    "countrySubdivision": "ND",
+    "countrySubdivisionName": "North Dakota",
+    "countrySubdivisionCode": "ND",
+    "postalCode": "58078",
+    "extendedPostalCode": "58078-8002",
+    "countryCode": "US",
+    "country": "United States",
+    "countryCodeISO3": "USA",
+    "freeformAddress": "3163 Blue Stem Drive, West Fargo, ND 58078",
+    "localName": "West Fargo"
+   },
+   "position": {
+    "lat": 46.8344,
+    "lon": -96.88433
+   },
+   "viewport": {
+    "topLeftPoint": {
+     "lat": 46.8353,
+     "lon": -96.88564
+    },
+    "btmRightPoint": {
+     "lat": 46.8335,
+     "lon": -96.88302
+    }
+   },
+   "entryPoints": [
+    {
+     "type": "minor",
+     "position": {
+      "lat": 46.83439,
+      "lon": -96.88457
+     }
+    },
+    {
+     "type": "main",
+     "position": {
+      "lat": 46.83442,
+      "lon": -96.88486
+     }
+    }
+   ]
+  },
+  {
+   "type": "POI",
+   "id": "x2drKr0KkMqLAUFrhIDUoQ",
+   "score": 4.2831697464,
+   "info": "search:ta:840386000019304-US",
+   "poi": {
+    "name": "Lewis & Clark Fargo North Dakota",
+    "phone": "+1 701-234-0521",
+    "categorySet": [
+     {
+      "id": 7372002
+     }
+    ],
+    "categories": [
+     "school"
+    ],
+    "classifications": [
+     {
+      "code": "SCHOOL",
+      "names": [
+       {
+        "nameLocale": "en-US",
+        "name": "school"
+       }
+      ]
+     }
+    ]
+   },
+   "address": {
+    "streetNumber": "505",
+    "streetName": "Broadway North",
+    "municipality": "Fargo",
+    "neighbourhood": "Downtown Fargo",
+    "countrySecondarySubdivision": "Cass",
+    "countrySubdivision": "ND",
+    "countrySubdivisionName": "North Dakota",
+    "countrySubdivisionCode": "ND",
+    "postalCode": "58102",
+    "extendedPostalCode": "58102-4487",
+    "countryCode": "US",
+    "country": "United States",
+    "countryCodeISO3": "USA",
+    "freeformAddress": "505 Broadway North, Fargo, ND 58102",
+    "localName": "Fargo"
+   },
+   "position": {
+    "lat": 46.88147,
+    "lon": -96.78726
+   },
+   "viewport": {
+    "topLeftPoint": {
+     "lat": 46.88237,
+     "lon": -96.78858
+    },
+    "btmRightPoint": {
+     "lat": 46.88057,
+     "lon": -96.78594
+    }
+   },
+   "entryPoints": [
+    {
+     "type": "main",
+     "position": {
+      "lat": 46.88147,
+      "lon": -96.78771
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,680 @@
+{
+ "url": "https://api.tomtom.com/routing/1/calculateRoute/47.6062,-122.3321:40.7608,-111.891/json?travelMode=truck&routeType=fastest&traffic=true&maxAlternatives=2&departAt=2026-11-02T08:00:00Z&routeRepresentation=encodedPolyline&instructionsType=coded&sectionType=travelMode&sectionType=motorway&report=effectiveSettings&computeTravelTimeFor=all",
+ "ms": 4185,
+ "response": {
+  "formatVersion": "0.0.12",
+  "report": {
+   "effectiveSettings": [
+    {
+     "key": "computeBestOrder",
+     "value": "false"
+    },
+    {
+     "key": "computeTollAmounts",
+     "value": "none"
+    },
+    {
+     "key": "computeTravelTimeFor",
+     "value": "all"
+    },
+    {
+     "key": "contentType",
+     "value": "json"
+    },
+    {
+     "key": "departAt",
+     "value": "2026-11-02T08:00:00.000Z"
+    },
+    {
+     "key": "guidanceVersion",
+     "value": "1"
+    },
+    {
+     "key": "includeTollPaymentTypes",
+     "value": "none"
+    },
+    {
+     "key": "instructionsType",
+     "value": "coded"
+    },
+    {
+     "key": "language",
+     "value": "en-GB"
+    },
+    {
+     "key": "locations",
+     "value": "47.60620,-122.33210:40.76080,-111.89100"
+    },
+    {
+     "key": "maxAlternatives",
+     "value": "2"
+    },
+    {
+     "key": "maxPathAlternatives",
+     "value": "2"
+    },
+    {
+     "key": "routeRepresentation",
+     "value": "encodedPolyline"
+    },
+    {
+     "key": "routeType",
+     "value": "fastest"
+    },
+    {
+     "key": "sectionType",
+     "value": "travelMode"
+    },
+    {
+     "key": "sectionType",
+     "value": "motorway"
+    },
+    {
+     "key": "traffic",
+     "value": "true"
+    },
+    {
+     "key": "travelMode",
+     "value": "truck"
+    },
+    {
+     "key": "vehicleAxleWeight",
+     "value": "0"
+    },
+    {
+     "key": "vehicleCommercial",
+     "value": "false"
+    },
+    {
+     "key": "vehicleEngineType",
+     "value": "combustion"
+    },
+    {
+     "key": "vehicleHeight",
+     "value": "0.00"
+    },
+    {
+     "key": "vehicleLength",
+     "value": "0.00"
+    },
+    {
+     "key": "vehicleMaxSpeed",
+     "value": "0"
+    },
+    {
+     "key": "vehicleNumberOfAxles",
+     "value": "0"
+    },
+    {
+     "key": "vehicleWeight",
+     "value": "0"
+    },
+    {
+     "key": "vehicleWidth",
+     "value": "0.00"
+    }
+   ]
+  },
+  "routes": [
+   {
+    "summary": {
+     "lengthInMeters": 1356997,
+     "travelTimeInSeconds": 43569,
+     "trafficDelayInSeconds": 0,
+     "trafficLengthInMeters": 0,
+     "departureTime": "2026-11-02T00:00:00-08:00",
+     "arrivalTime": "2026-11-02T13:06:09-07:00",
+     "noTrafficTravelTimeInSeconds": 43158,
+     "historicTrafficTravelTimeInSeconds": 43569,
+     "liveTrafficIncidentsTravelTimeInSeconds": 43569
+    },
+    "legs": [
+     {
+      "summary": {
+       "lengthInMeters": 1356997,
+       "travelTimeInSeconds": 43569,
+       "trafficDelayInSeconds": 0,
+       "trafficLengthInMeters": 0,
+       "departureTime": "2026-11-02T00:00:00-08:00",
+       "arrivalTime": "2026-11-02T13:06:09-07:00",
+       "noTrafficTravelTimeInSeconds": 43158,
+       "historicTrafficTravelTimeInSeconds": 43569,
+       "liveTrafficIncidentsTravelTimeInSeconds": 43569
+      },
+      "encodedPolyline": "qbqaHz~siVMLz@pCu@p@uAlAa@mAOc@GWe@uA]eAQg@i@mB@KDc@@G?KBQDOBGDEVWl@c@JK`BeAr@k@jAaArAuA~BwBRWl@c@pA_AHGrB_BzAqAdBkBrCyD...[43999 chars]",
+      "encodedPolylinePrecision": 5
+     }
+    ],
+    "sections": [
+     {
+      "startPointIndex": 28,
+      "endPointIndex": 11685,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 11813,
+      "endPointIndex": 12325,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 0,
+      "endPointIndex": 12421,
+      "sectionType": "TRAVEL_MODE",
+      "travelMode": "truck"
+     }
+    ],
+    "guidance": {
+     "instructions": [
+      {
+       "routeOffsetInMeters": 0,
+       "travelTimeInSeconds": 0,
+       "point": {
+        "latitude": 47.60633,
+        "longitude": -122.33214
+       },
+       "pointIndex": 0,
+       "instructionType": "LOCATION_DEPARTURE",
+       "street": "Madison St",
+       "countryCode": "USA",
+       "stateCode": "WA",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "DEPART"
+      },
+      {
+       "routeOffsetInMeters": 9,
+       "travelTimeInSeconds": 3,
+       "point": {
+        "latitude": 47.6064,
+        "longitude": -122.33221
+       },
+       "pointIndex": 1,
+       "instructionType": "TURN",
+       "street": "Madison St",
+       "countryCode": "USA",
+       "stateCode": "WA",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": -90,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_LEFT"
+      },
+      {
+       "routeOffsetInMeters": 74,
+       "travelTimeInSeconds": 38,
+       "point": {
+        "latitude": 47.6061,
+        "longitude": -122.33294
+       },
+       "pointIndex": 2,
+       "instructionType": "TURN",
+       "street": "4th Ave",
+       "countryCode": "USA",
+       "stateCode": "WA",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": 90,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_RIGHT"
+      },
+      {
+       "routeOffsetInMeters": 166,
+       "travelTimeInSeconds": 64,
+       "point": {
+        "latitude": 47.6068,
+        "longitude": -122.33358
+       },
+       "pointIndex": 4,
+       "instructionType": "TURN",
+       "street": "Spring St",
+       "countryCode": "USA",
+       "stateCode": "WA",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": 90,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_RIGHT"
+      },
+      "...[37 instructions]",
+      {
+       "routeOffsetInMeters": 1356870,
+       "travelTimeInSeconds": 43493,
+       "point": {
+        "latitude": 40.76058,
+        "longitude": -111.89231
+       },
+       "pointIndex": 12413,
+       "instructionType": "TURN",
+       "street": "S Main St",
+       "countryCode": "USA",
+       "stateCode": "UT",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": -90,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_LEFT"
+      },
+      {
+       "routeOffsetInMeters": 1356997,
+       "travelTimeInSeconds": 43569,
+       "point": {
+        "latitude": 40.7608,
+        "longitude": -111.89099
+       },
+       "pointIndex": 12421,
+       "instructionType": "LOCATION_ARRIVAL",
+       "street": "S Main St",
+       "countryCode": "USA",
+       "stateCode": "UT",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "ARRIVE"
+      }
+     ],
+     "instructionGroups": [
+      {
+       "firstInstructionIndex": 0,
+       "lastInstructionIndex": 8,
+       "groupLengthInMeters": 176079
+      },
+      {
+       "firstInstructionIndex": 9,
+       "lastInstructionIndex": 12,
+       "groupLengthInMeters": 230640
+      },
+      {
+       "firstInstructionIndex": 13,
+       "lastInstructionIndex": 25,
+       "groupLengthInMeters": 904604
+      },
+      {
+       "firstInstructionIndex": 26,
+       "lastInstructionIndex": 36,
+       "groupLengthInMeters": 45674
+      }
+     ]
+    }
+   },
+   {
+    "summary": {
+     "lengthInMeters": 1611136,
+     "travelTimeInSeconds": 50736,
+     "trafficDelayInSeconds": 0,
+     "trafficLengthInMeters": 0,
+     "departureTime": "2026-11-02T00:00:00-08:00",
+     "arrivalTime": "2026-11-02T15:05:36-07:00",
+     "noTrafficTravelTimeInSeconds": 50449,
+     "historicTrafficTravelTimeInSeconds": 50736,
+     "liveTrafficIncidentsTravelTimeInSeconds": 50736,
+     "deviationDistance": 176079,
+     "deviationTime": 6155,
+     "deviationPoint": {
+      "latitude": 46.9702,
+      "longitude": -120.52088
+     }
+    },
+    "legs": [
+     {
+      "summary": {
+       "lengthInMeters": 1611136,
+       "travelTimeInSeconds": 50736,
+       "trafficDelayInSeconds": 0,
+       "trafficLengthInMeters": 0,
+       "departureTime": "2026-11-02T00:00:00-08:00",
+       "arrivalTime": "2026-11-02T15:05:36-07:00",
+       "noTrafficTravelTimeInSeconds": 50449,
+       "historicTrafficTravelTimeInSeconds": 50736,
+       "liveTrafficIncidentsTravelTimeInSeconds": 50736
+      },
+      "encodedPolyline": "qbqaHz~siVMLz@pCu@p@uAlAa@mAOc@GWe@uA]eAQg@i@mB@KDc@@G?KBQDOBGDEVWl@c@JK`BeAr@k@jAaArAuA~BwBRWl@c@pA_AHGrB_BzAqAdBkBrCyD...[51436 chars]",
+      "encodedPolylinePrecision": 5
+     }
+    ],
+    "sections": [
+     {
+      "startPointIndex": 28,
+      "endPointIndex": 14028,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 14156,
+      "endPointIndex": 14668,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 0,
+      "endPointIndex": 14764,
+      "sectionType": "TRAVEL_MODE",
+      "travelMode": "truck"
+     }
+    ],
+    "guidance": {
+     "instructions": [
+      {
+       "routeOffsetInMeters": 0,
+       "travelTimeInSeconds": 0,
+       "point": {
+        "latitude": 47.60633,
+        "longitude": -122.33214
+       },
+       "pointIndex": 0,
+       "instructionType": "LOCATION_DEPARTURE",
+       "street": "Madison St",
+       "countryCode": "USA",
+       "stateCode": "WA",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "DEPART"
+      },
+      {
+       "routeOffsetInMeters": 9,
+       "travelTimeInSeconds": 3,
+       "point": {
+        "latitude": 47.6064,
+        "longitude": -122.33221
+       },
+       "pointIndex": 1,
+       "instructionType": "TURN",
+       "street": "Madison St",
+       "countryCode": "USA",
+       "stateCode": "WA",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": -90,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_LEFT"
+      },
+      {
+       "routeOffsetInMeters": 74,
+       "travelTimeInSeconds": 38,
+       "point": {
+        "latitude": 47.6061,
+        "longitude": -122.33294
+       },
+       "pointIndex": 2,
+       "instructionType": "TURN",
+       "street": "4th Ave",
+       "countryCode": "USA",
+       "stateCode": "WA",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": 90,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_RIGHT"
+      },
+      {
+       "routeOffsetInMeters": 166,
+       "travelTimeInSeconds": 64,
+       "point": {
+        "latitude": 47.6068,
+        "longitude": -122.33358
+       },
+       "pointIndex": 4,
+       "instructionType": "TURN",
+       "street": "Spring St",
+       "countryCode": "USA",
+       "stateCode": "WA",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": 90,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_RIGHT"
+      },
+      "...[32 instructions]",
+      {
+       "routeOffsetInMeters": 1611009,
+       "travelTimeInSeconds": 50659,
+       "point": {
+        "latitude": 40.76058,
+        "longitude": -111.89231
+       },
+       "pointIndex": 14756,
+       "instructionType": "TURN",
+       "street": "S Main St",
+       "countryCode": "USA",
+       "stateCode": "UT",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": -90,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_LEFT"
+      },
+      {
+       "routeOffsetInMeters": 1611136,
+       "travelTimeInSeconds": 50736,
+       "point": {
+        "latitude": 40.7608,
+        "longitude": -111.89099
+       },
+       "pointIndex": 14764,
+       "instructionType": "LOCATION_ARRIVAL",
+       "street": "S Main St",
+       "countryCode": "USA",
+       "stateCode": "UT",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "ARRIVE"
+      }
+     ],
+     "instructionGroups": [
+      {
+       "firstInstructionIndex": 0,
+       "lastInstructionIndex": 12,
+       "groupLengthInMeters": 946813
+      },
+      {
+       "firstInstructionIndex": 13,
+       "lastInstructionIndex": 17,
+       "groupLengthInMeters": 607102
+      },
+      {
+       "firstInstructionIndex": 18,
+       "lastInstructionIndex": 31,
+       "groupLengthInMeters": 57221
+      }
+     ]
+    }
+   },
+   {
+    "summary": {
+     "lengthInMeters": 1692202,
+     "travelTimeInSeconds": 60568,
+     "trafficDelayInSeconds": 0,
+     "trafficLengthInMeters": 0,
+     "departureTime": "2026-11-02T00:00:00-08:00",
+     "arrivalTime": "2026-11-02T17:49:28-07:00",
+     "noTrafficTravelTimeInSeconds": 60278,
+     "historicTrafficTravelTimeInSeconds": 60568,
+     "liveTrafficIncidentsTravelTimeInSeconds": 60568,
+     "deviationDistance": 1759,
+     "deviationTime": 203,
+     "deviationPoint": {
+      "latitude": 47.59745,
+      "longitude": -122.32118
+     }
+    },
+    "legs": [
+     {
+      "summary": {
+       "lengthInMeters": 1692202,
+       "travelTimeInSeconds": 60568,
+       "trafficDelayInSeconds": 0,
+       "trafficLengthInMeters": 0,
+       "departureTime": "2026-11-02T00:00:00-08:00",
+       "arrivalTime": "2026-11-02T17:49:28-07:00",
+       "noTrafficTravelTimeInSeconds": 60278,
+       "historicTrafficTravelTimeInSeconds": 60568,
+       "liveTrafficIncidentsTravelTimeInSeconds": 60568
+      },
+      "encodedPolyline": "qbqaHz~siVMLz@pCu@p@uAlAa@mAOc@GWe@uA]eAQg@i@mB@KDc@@G?KBQDOBGDEVWl@c@JK`BeAr@k@jAaArAuA~BwBRWl@c@pA_AHGrB_BzAqAdBkBrCyD...[46839 chars]",
+      "encodedPolylinePrecision": 5
+     }
+    ],
+    "sections": [
+     {
+      "startPointIndex": 28,
+      "endPointIndex": 3760,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 3779,
+      "endPointIndex": 3957,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 10138,
+      "endPointIndex": 13333,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 0,
+      "endPointIndex": 13430,
+      "sectionType": "TRAVEL_MODE",
+      "travelMode": "truck"
+     }
+    ],
+    "guidance": {
+     "instructions": [
+      {
+       "routeOffsetInMeters": 0,
+       "travelTimeInSeconds": 0,
+       "point": {
+        "latitude": 47.60633,
+        "longitude": -122.33214
+       },
+       "pointIndex": 0,
+       "instructionType": "LOCATION_DEPARTURE",
+       "street": "Madison St",
+       "countryCode": "USA",
+       "stateCode": "WA",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "DEPART"
+      },
+      {
+       "routeOffsetInMeters": 9,
+       "travelTimeInSeconds": 3,
+       "point": {
+        "latitude": 47.6064,
+        "longitude": -122.33221
+       },
+       "pointIndex": 1,
+       "instructionType": "TURN",
+       "street": "Madison St",
+       "countryCode": "USA",
+       "stateCode": "WA",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": -90,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_LEFT"
+      },
+      {
+       "routeOffsetInMeters": 74,
+       "travelTimeInSeconds": 38,
+       "point": {
+        "latitude": 47.6061,
+        "longitude": -122.33294
+       },
+       "pointIndex": 2,
+       "instructionType": "TURN",
+       "street": "4th Ave",
+       "countryCode": "USA",
+       "stateCode": "WA",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": 90,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_RIGHT"
+      },
+      {
+       "routeOffsetInMeters": 166,
+       "travelTimeInSeconds": 64,
+       "point": {
+        "latitude": 47.6068,
+        "longitude": -122.33358
+       },
+       "pointIndex": 4,
+       "instructionType": "TURN",
+       "street": "Spring St",
+       "countryCode": "USA",
+       "stateCode": "WA",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": 90,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_RIGHT"
+      },
+      "...[56 instructions]",
+      {
+       "routeOffsetInMeters": 1691686,
+       "travelTimeInSeconds": 60374,
+       "point": {
+        "latitude": 40.7563,
+        "longitude": -111.89118
+       },
+       "pointIndex": 13412,
+       "instructionType": "TURN",
+       "street": "S Main St",
+       "countryCode": "USA",
+       "stateCode": "UT",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": -90,
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_LEFT"
+      },
+      {
+       "routeOffsetInMeters": 1692202,
+       "travelTimeInSeconds": 60568,
+       "point": {
+        "latitude": 40.7608,
+        "longitude": -111.89099
+       },
+       "pointIndex": 13430,
+       "instructionType": "LOCATION_ARRIVAL",
+       "street": "S Main St",
+       "countryCode": "USA",
+       "stateCode": "UT",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "ARRIVE"
+      }
+     ],
+     "instructionGroups": [
+      {
+       "firstInstructionIndex": 0,
+       "lastInstructionIndex": 23,
+       "groupLengthInMeters": 354122
+      },
+      {
+       "firstInstructionIndex": 24,
+       "lastInstructionIndex": 29,
+       "groupLengthInMeters": 170277
+      },
+      {
+       "firstInstructionIndex": 30,
+       "lastInstructionIndex": 41,
+       "groupLengthInMeters": 244767
+      },
+      {
+       "firstInstructionIndex": 42,
+       "lastInstructionIndex": 47,
+       "groupLengthInMeters": 350932
+      },
+      {
+       "firstInstructionIndex": 48,
+       "lastInstructionIndex": 52,
+       "groupLengthInMeters": 569272
+      },
+      {
+       "firstInstructionIndex": 53,
+       "lastInstructionIndex": 55,
+       "groupLengthInMeters": 2832
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

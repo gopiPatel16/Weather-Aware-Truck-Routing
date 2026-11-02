@@ -1,7 +1,7 @@
 # API spike report
 
 Evidence gathered **before** building the provider code, as required by the review document (section 5).
-Raw sanitized responses are in `docs/spike/open-meteo/` (live) and, once a key is available, `docs/spike/tomtom/`.
+Raw sanitized responses are in `docs/spike/open-meteo/` and `docs/spike/tomtom/` (both live; keys removed).
 Scripts: `scripts/spike/spike_open_meteo.py`, `scripts/spike/spike_tomtom.py`.
 
 ## Status
@@ -11,13 +11,13 @@ Scripts: `scripts/spike/spike_open_meteo.py`, `scripts/spike/spike_tomtom.py`.
 | Open-Meteo multi-point forecast, units, timestamps, horizon | **Live run, 1 Nov 2026** (below) | ✅ proven |
 | Open-Meteo precipitation timing | Open-Meteo docs + `precipitation = rain + showers + snowfall/7` check on live data | ✅ rule in `docs/PLAN.md` §5.4, tests in `test_forecast_select.py` |
 | Open-Meteo usage and licence | Open-Meteo terms page | ✅ checked |
-| TomTom truck routing, alternatives, encoded geometry | TomTom documentation only | ⏳ **live run pending a free API key** |
-| TomTom ETA data (`guidance.instructions[]`) | TomTom documentation only | ⏳ live run pending |
+| TomTom truck routing, alternatives, encoded geometry | **Live run, 2 Nov 2026** (section 2) | ✅ proven |
+| TomTom ETA data (`guidance.instructions[]`) | **Live run, 2 Nov 2026** | ✅ proven (offsets and times present on every route, alternatives included) |
 | TomTom `vehicleWeight` semantics | TomTom documentation | ✅ decision: never sent |
-| TomTom Search / geocoding | TomTom documentation / free-tier page | ⏳ live run pending |
+| TomTom Search / geocoding | **Live run, 2 Nov 2026** | ✅ proven; no time-zone field, so zones are computed offline |
 | Hosting (Render free) | Render documentation | ⏳ verify after deploy |
 
-**Rule:** no TomTom-dependent code is called done until `scripts/spike/spike_tomtom.py` has been run and its output reviewed.
+**Rule (met):** TomTom-dependent code was written only after `scripts/spike/spike_tomtom.py` had run against the live API and its output had been reviewed.
 
 ---
 
@@ -43,7 +43,7 @@ Request shape used by the app: `latitude=…,…&longitude=…,…&hourly=wind_s
 
 **Usage and licence** (open-meteo.com/en/terms): free API is for **non-commercial** use (no ads/subscriptions; donations allowed); data under **CC BY 4.0** → attribution "Weather data by Open-Meteo.com" is shown in the UI and README; limits <10 000 calls/day, 5 000/h, 600/min applied **per IP / application** — shared hosts such as Render may hit them sooner, so responses are cached 30 min, 429 is retried with back-off, and failures degrade to Unknown (never Low). Commercial use would require a paid plan (`OPEN_METEO_API_KEY` is supported).
 
-## 2. TomTom (documentation verified; live run pending)
+## 2. TomTom (documentation verified, then proven live on 2 Nov 2026)
 
 From the official docs (docs.tomtom.com, Calculate Route + Guidance Instructions):
 - `travelMode=truck` is supported; `maxAlternatives` 0–5 ("fewer routes may be returned if fewer exist").
@@ -53,12 +53,20 @@ From the official docs (docs.tomtom.com, Calculate Route + Guidance Instructions
 - `vehicleWeight`: "Weight of the vehicle in kilograms" — the vehicle, **not the cargo**. **Decision: not sent.** Axle count, dimensions and hazmat are not sent either. `vehicleCommercial` is sent only if live test T2 shows it matters (then disclosed in the README).
 - Not documented: a maximum route length; a compute limit of about 30 s exists, and `maxAlternatives > 0` and long distances slow responses → request timeout is generous and failures are reported honestly.
 
-**To run** (needs a free key from developer.tomtom.com, no credit card): put `TOMTOM_API_KEY=…` in `backend/.env`, then `backend\.venv\Scripts\python scripts\spike\spike_tomtom.py`. It tests four long trips (Chicago→Denver, Dallas→Atlanta, Minneapolis→Billings, Seattle→Salt Lake City) and prints: routes returned per trip, pairwise geometry overlap (used to freeze the duplicate thresholds), polyline precision, guidance fields and offsets, `vehicleCommercial` effect (T2), `maxAlternatives=3` (T3), car vs truck (T4), and geocoding typeahead results (T5).
+## 2.1 Live results (`scripts/spike/spike_tomtom.py`, responses in `docs/spike/tomtom/`)
 
-**Open questions the live run must answer** (each has a documented fallback):
-| Question | Fallback if the answer is "no" |
+| Question | Result |
 |---|---|
-| does truck mode return ≥ 2 alternatives on 1000-mile trips? | show what is returned with the honest count message (already implemented) |
-| are `guidance.instructions[]` offsets present for truck mode and alternatives? | uniform-speed ETA, flagged "estimated" (already implemented) |
-| is `encodedPolyline` precision 5? | adapter reads `encodedPolylinePrecision` |
-| do duplicate thresholds (95 % overlap within 0.5 mi, ±3 % distance/time) separate real alternatives? | tune from measured overlap ratios |
+| Does truck mode return alternatives on ~1000-mile trips? | **Yes.** `maxAlternatives=2` returned **3 routes on all four trips**: Chicago→Denver 1027 / 1190 / 1325 mi; Dallas→Atlanta 784 / 834 / 966 mi; Minneapolis→Billings 843 / 946 / 1327 mi; Seattle→Salt Lake City 843 / 1001 / 1051 mi. Responses took 3.9–5.6 s |
+| Are `guidance.instructions[]` offsets present for truck mode and for alternatives? | **Yes**, on every route: `routeOffsetInMeters` and `travelTimeInSeconds` from the first instruction (0, 0) to the arrival instruction (offset = route length). ETA therefore comes from route guidance (`eta_method = route_guidance`); the uniform-speed fallback was not needed |
+| Polyline precision? | `encodedPolylinePrecision: 5` on every leg; one leg per route |
+| Do the duplicate thresholds separate real alternatives? | Yes. Within 800 m, the share of one route lying on another was 0.00–0.22 for the pairs printed (Minneapolis→Billings and Seattle→Salt Lake City), far below the 0.95 duplicate threshold, so provider alternatives are genuinely different roads |
+| `vehicleCommercial=true` (T2)? | Returned the same three routes as the default truck request (1027 / 1190 / 1325 mi), i.e. no measurable effect on this trip. **Not sent** (plan D8): the app makes no vehicle assumptions beyond `travelMode=truck` |
+| `maxAlternatives=3` (T3)? | Returns 4 routes but takes 10.5 s; the app asks for 2 alternatives and shows what it gets |
+| `travelMode=car` (T4)? | Car mode returned 1027 / 1190 / 1238 mi — the third route differs from truck mode (1325 mi), confirming truck mode changes routing |
+| Search typeahead (T5)? | Works for cities and street addresses (`typeahead=true`, `countrySet=US,CA`, 0.6–1.6 s). Result fields: `address.freeformAddress`, `position`, `type`, `entityType`. **No time-zone field**, so the backend derives IANA zones from coordinates offline |
+| Traffic delay in the sample? | 0 s (the departure was in the future); durations are typical-traffic estimates |
+
+**Environment note.** On this development PC Python rejected TomTom's certificate (`self-signed certificate in certificate chain`) because a TLS-intercepting layer re-signs HTTPS traffic. Certificate verification was *not* disabled; the spike was run with the operating system's trust store (`truststore`). The backend has the same switch: `USE_SYSTEM_CA_STORE=1`.
+
+**To re-run:** put `TOMTOM_API_KEY=…` in `backend/.env`, then `backend\.venv\Scripts\python scripts\spike\spike_tomtom.py` (add `USE_SYSTEM_CA_STORE`-style trust-store handling if your network intercepts TLS).

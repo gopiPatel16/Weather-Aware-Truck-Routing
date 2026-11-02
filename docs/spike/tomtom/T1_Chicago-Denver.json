@@ -1,0 +1,735 @@
+{
+ "url": "https://api.tomtom.com/routing/1/calculateRoute/41.8781,-87.6298:39.7392,-104.9903/json?travelMode=truck&routeType=fastest&traffic=true&maxAlternatives=2&departAt=2026-11-02T08:00:00Z&routeRepresentation=encodedPolyline&instructionsType=coded&sectionType=travelMode&sectionType=motorway&report=effectiveSettings&computeTravelTimeFor=all",
+ "ms": 5505,
+ "response": {
+  "formatVersion": "0.0.12",
+  "report": {
+   "effectiveSettings": [
+    {
+     "key": "computeBestOrder",
+     "value": "false"
+    },
+    {
+     "key": "computeTollAmounts",
+     "value": "none"
+    },
+    {
+     "key": "computeTravelTimeFor",
+     "value": "all"
+    },
+    {
+     "key": "contentType",
+     "value": "json"
+    },
+    {
+     "key": "departAt",
+     "value": "2026-11-02T08:00:00.000Z"
+    },
+    {
+     "key": "guidanceVersion",
+     "value": "1"
+    },
+    {
+     "key": "includeTollPaymentTypes",
+     "value": "none"
+    },
+    {
+     "key": "instructionsType",
+     "value": "coded"
+    },
+    {
+     "key": "language",
+     "value": "en-GB"
+    },
+    {
+     "key": "locations",
+     "value": "41.87810,-87.62980:39.73920,-104.99030"
+    },
+    {
+     "key": "maxAlternatives",
+     "value": "2"
+    },
+    {
+     "key": "maxPathAlternatives",
+     "value": "2"
+    },
+    {
+     "key": "routeRepresentation",
+     "value": "encodedPolyline"
+    },
+    {
+     "key": "routeType",
+     "value": "fastest"
+    },
+    {
+     "key": "sectionType",
+     "value": "motorway"
+    },
+    {
+     "key": "sectionType",
+     "value": "travelMode"
+    },
+    {
+     "key": "traffic",
+     "value": "true"
+    },
+    {
+     "key": "travelMode",
+     "value": "truck"
+    },
+    {
+     "key": "vehicleAxleWeight",
+     "value": "0"
+    },
+    {
+     "key": "vehicleCommercial",
+     "value": "false"
+    },
+    {
+     "key": "vehicleEngineType",
+     "value": "combustion"
+    },
+    {
+     "key": "vehicleHeight",
+     "value": "0.00"
+    },
+    {
+     "key": "vehicleLength",
+     "value": "0.00"
+    },
+    {
+     "key": "vehicleMaxSpeed",
+     "value": "0"
+    },
+    {
+     "key": "vehicleNumberOfAxles",
+     "value": "0"
+    },
+    {
+     "key": "vehicleWeight",
+     "value": "0"
+    },
+    {
+     "key": "vehicleWidth",
+     "value": "0.00"
+    }
+   ]
+  },
+  "routes": [
+   {
+    "summary": {
+     "lengthInMeters": 1653119,
+     "travelTimeInSeconds": 52415,
+     "trafficDelayInSeconds": 0,
+     "trafficLengthInMeters": 0,
+     "departureTime": "2026-11-02T02:00:00-06:00",
+     "arrivalTime": "2026-11-02T15:33:35-07:00",
+     "noTrafficTravelTimeInSeconds": 51820,
+     "historicTrafficTravelTimeInSeconds": 52424,
+     "liveTrafficIncidentsTravelTimeInSeconds": 52415
+    },
+    "legs": [
+     {
+      "summary": {
+       "lengthInMeters": 1653119,
+       "travelTimeInSeconds": 52415,
+       "trafficDelayInSeconds": 0,
+       "trafficLengthInMeters": 0,
+       "departureTime": "2026-11-02T02:00:00-06:00",
+       "arrivalTime": "2026-11-02T15:33:35-07:00",
+       "noTrafficTravelTimeInSeconds": 51820,
+       "historicTrafficTravelTimeInSeconds": 52424,
+       "liveTrafficIncidentsTravelTimeInSeconds": 52415
+      },
+      "encodedPolyline": "cir~FbezuOnBEVAjBAN?hA?RAr@?^Ah@A?fEB`C@jA?tD@tA?tBC`GAN?L?VA|B?N?P?^@d@?vA@pA@hBD`I?t@?tD?tA?l@@tB?zA@X?L?b@@dF?Z?HAj@C...[38358 chars]",
+      "encodedPolylinePrecision": 5
+     }
+    ],
+    "sections": [
+     {
+      "startPointIndex": 15,
+      "endPointIndex": 9642,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 10852,
+      "endPointIndex": 11195,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 0,
+      "endPointIndex": 11297,
+      "sectionType": "TRAVEL_MODE",
+      "travelMode": "truck"
+     },
+     {
+      "startPointIndex": 11297,
+      "endPointIndex": 11304,
+      "sectionType": "TRAVEL_MODE",
+      "travelMode": "other"
+     }
+    ],
+    "guidance": {
+     "instructions": [
+      {
+       "routeOffsetInMeters": 0,
+       "travelTimeInSeconds": 0,
+       "point": {
+        "latitude": 41.8781,
+        "longitude": -87.62978
+       },
+       "pointIndex": 0,
+       "instructionType": "LOCATION_DEPARTURE",
+       "street": "S Federal St",
+       "countryCode": "USA",
+       "stateCode": "IL",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "DEPART"
+      },
+      {
+       "routeOffsetInMeters": 267,
+       "travelTimeInSeconds": 82,
+       "point": {
+        "latitude": 41.8757,
+        "longitude": -87.6297
+       },
+       "pointIndex": 9,
+       "instructionType": "TURN",
+       "street": "W Ida B. Wells Dr",
+       "countryCode": "USA",
+       "stateCode": "IL",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": 90,
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_RIGHT"
+      },
+      {
+       "routeOffsetInMeters": 1168,
+       "travelTimeInSeconds": 193,
+       "point": {
+        "latitude": 41.87564,
+        "longitude": -87.64054
+       },
+       "pointIndex": 30,
+       "instructionType": "TURN",
+       "roadNumbers": [
+        "I-290 W"
+       ],
+       "street": "Interstate Highway 290 W",
+       "countryCode": "USA",
+       "stateCode": "IL",
+       "junctionType": "BIFURCATION",
+       "turnAngleInDecimalDegrees": -45,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "KEEP_LEFT"
+      },
+      {
+       "routeOffsetInMeters": 1309,
+       "travelTimeInSeconds": 203,
+       "point": {
+        "latitude": 41.87563,
+        "longitude": -87.64225
+       },
+       "pointIndex": 34,
+       "instructionType": "TURN",
+       "roadNumbers": [
+        "I-290 W"
+       ],
+       "street": "Interstate Highway 290 W",
+       "countryCode": "USA",
+       "stateCode": "IL",
+       "signpostText": "West Suburbs",
+       "junctionType": "BIFURCATION",
+       "turnAngleInDecimalDegrees": -45,
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "KEEP_LEFT"
+      },
+      "...[38 instructions]",
+      {
+       "routeOffsetInMeters": 1653029,
+       "travelTimeInSeconds": 52388,
+       "point": {
+        "latitude": 39.74,
+        "longitude": -104.99034
+       },
+       "pointIndex": 11297,
+       "instructionType": "LOCATION_ARRIVAL",
+       "street": "N Bannock St",
+       "countryCode": "USA",
+       "stateCode": "CO",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "ARRIVE"
+      },
+      {
+       "routeOffsetInMeters": 1653119,
+       "travelTimeInSeconds": 52415,
+       "point": {
+        "latitude": 39.7392,
+        "longitude": -104.99027
+       },
+       "pointIndex": 11304,
+       "instructionType": "LOCATION_ARRIVAL",
+       "street": "N Bannock St",
+       "countryCode": "USA",
+       "stateCode": "CO",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "ARRIVE"
+      }
+     ],
+     "instructionGroups": [
+      {
+       "firstInstructionIndex": 0,
+       "lastInstructionIndex": 13,
+       "groupLengthInMeters": 248489
+      },
+      {
+       "firstInstructionIndex": 14,
+       "lastInstructionIndex": 22,
+       "groupLengthInMeters": 1064530
+      },
+      {
+       "firstInstructionIndex": 23,
+       "lastInstructionIndex": 29,
+       "groupLengthInMeters": 327296
+      },
+      {
+       "firstInstructionIndex": 30,
+       "lastInstructionIndex": 37,
+       "groupLengthInMeters": 12804
+      }
+     ]
+    }
+   },
+   {
+    "summary": {
+     "lengthInMeters": 1915536,
+     "travelTimeInSeconds": 61171,
+     "trafficDelayInSeconds": 50,
+     "trafficLengthInMeters": 6628,
+     "departureTime": "2026-11-02T02:00:00-06:00",
+     "arrivalTime": "2026-11-02T17:59:31-07:00",
+     "noTrafficTravelTimeInSeconds": 60563,
+     "historicTrafficTravelTimeInSeconds": 61133,
+     "liveTrafficIncidentsTravelTimeInSeconds": 61171,
+     "deviationDistance": 1168,
+     "deviationTime": 193,
+     "deviationPoint": {
+      "latitude": 41.87564,
+      "longitude": -87.64054
+     }
+    },
+    "legs": [
+     {
+      "summary": {
+       "lengthInMeters": 1915536,
+       "travelTimeInSeconds": 61171,
+       "trafficDelayInSeconds": 50,
+       "trafficLengthInMeters": 6628,
+       "departureTime": "2026-11-02T02:00:00-06:00",
+       "arrivalTime": "2026-11-02T17:59:31-07:00",
+       "noTrafficTravelTimeInSeconds": 60563,
+       "historicTrafficTravelTimeInSeconds": 61133,
+       "liveTrafficIncidentsTravelTimeInSeconds": 61171
+      },
+      "encodedPolyline": "cir~FbezuOnBEVAjBAN?hA?RAr@?^Ah@A?fEB`C@jA?tD@tA?tBC`GAN?L?VA|B?N?P?^@d@?vA@pA@hBD`I?t@?tDER?D?z@AJ?X?NALGZ?P@`@CbC?NAlB...[45982 chars]",
+      "encodedPolylinePrecision": 5
+     }
+    ],
+    "sections": [
+     {
+      "startPointIndex": 15,
+      "endPointIndex": 30,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 82,
+      "endPointIndex": 11453,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 12367,
+      "endPointIndex": 13551,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 0,
+      "endPointIndex": 13653,
+      "sectionType": "TRAVEL_MODE",
+      "travelMode": "truck"
+     },
+     {
+      "startPointIndex": 13653,
+      "endPointIndex": 13660,
+      "sectionType": "TRAVEL_MODE",
+      "travelMode": "other"
+     }
+    ],
+    "guidance": {
+     "instructions": [
+      {
+       "routeOffsetInMeters": 0,
+       "travelTimeInSeconds": 0,
+       "point": {
+        "latitude": 41.8781,
+        "longitude": -87.62978
+       },
+       "pointIndex": 0,
+       "instructionType": "LOCATION_DEPARTURE",
+       "street": "S Federal St",
+       "countryCode": "USA",
+       "stateCode": "IL",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "DEPART"
+      },
+      {
+       "routeOffsetInMeters": 267,
+       "travelTimeInSeconds": 82,
+       "point": {
+        "latitude": 41.8757,
+        "longitude": -87.6297
+       },
+       "pointIndex": 9,
+       "instructionType": "TURN",
+       "street": "W Ida B. Wells Dr",
+       "countryCode": "USA",
+       "stateCode": "IL",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": 90,
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_RIGHT"
+      },
+      {
+       "routeOffsetInMeters": 1168,
+       "travelTimeInSeconds": 193,
+       "point": {
+        "latitude": 41.87564,
+        "longitude": -87.64054
+       },
+       "pointIndex": 30,
+       "instructionType": "TURN",
+       "roadNumbers": [
+        "I-94 E",
+        "I-90 E"
+       ],
+       "street": "Interstate Highway 90 E",
+       "countryCode": "USA",
+       "stateCode": "IL",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": 45,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "MOTORWAY_EXIT_RIGHT"
+      },
+      {
+       "routeOffsetInMeters": 1252,
+       "travelTimeInSeconds": 200,
+       "point": {
+        "latitude": 41.87573,
+        "longitude": -87.64154
+       },
+       "pointIndex": 39,
+       "instructionType": "TURN",
+       "roadNumbers": [
+        "I-94 E",
+        "I-90 E"
+       ],
+       "street": "Interstate Highway 90 E",
+       "countryCode": "USA",
+       "stateCode": "IL",
+       "junctionType": "BIFURCATION",
+       "turnAngleInDecimalDegrees": 45,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "KEEP_RIGHT"
+      },
+      "...[67 instructions]",
+      {
+       "routeOffsetInMeters": 1915446,
+       "travelTimeInSeconds": 61144,
+       "point": {
+        "latitude": 39.74,
+        "longitude": -104.99034
+       },
+       "pointIndex": 13653,
+       "instructionType": "LOCATION_ARRIVAL",
+       "street": "N Bannock St",
+       "countryCode": "USA",
+       "stateCode": "CO",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "ARRIVE"
+      },
+      {
+       "routeOffsetInMeters": 1915536,
+       "travelTimeInSeconds": 61171,
+       "point": {
+        "latitude": 39.7392,
+        "longitude": -104.99027
+       },
+       "pointIndex": 13660,
+       "instructionType": "LOCATION_ARRIVAL",
+       "street": "N Bannock St",
+       "countryCode": "USA",
+       "stateCode": "CO",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "ARRIVE"
+      }
+     ],
+     "instructionGroups": [
+      {
+       "firstInstructionIndex": 0,
+       "lastInstructionIndex": 5,
+       "groupLengthInMeters": 3771
+      },
+      {
+       "firstInstructionIndex": 6,
+       "lastInstructionIndex": 15,
+       "groupLengthInMeters": 440038
+      },
+      {
+       "firstInstructionIndex": 16,
+       "lastInstructionIndex": 17,
+       "groupLengthInMeters": 46928
+      },
+      {
+       "firstInstructionIndex": 18,
+       "lastInstructionIndex": 24,
+       "groupLengthInMeters": 371205
+      },
+      {
+       "firstInstructionIndex": 25,
+       "lastInstructionIndex": 41,
+       "groupLengthInMeters": 706706
+      },
+      {
+       "firstInstructionIndex": 42,
+       "lastInstructionIndex": 50,
+       "groupLengthInMeters": 195986
+      },
+      {
+       "firstInstructionIndex": 51,
+       "lastInstructionIndex": 58,
+       "groupLengthInMeters": 141892
+      },
+      {
+       "firstInstructionIndex": 59,
+       "lastInstructionIndex": 66,
+       "groupLengthInMeters": 9010
+      }
+     ]
+    }
+   },
+   {
+    "summary": {
+     "lengthInMeters": 2131791,
+     "travelTimeInSeconds": 67867,
+     "trafficDelayInSeconds": 0,
+     "trafficLengthInMeters": 0,
+     "departureTime": "2026-11-02T02:00:00-06:00",
+     "arrivalTime": "2026-11-02T19:51:07-07:00",
+     "noTrafficTravelTimeInSeconds": 67548,
+     "historicTrafficTravelTimeInSeconds": 67872,
+     "liveTrafficIncidentsTravelTimeInSeconds": 67867,
+     "deviationDistance": 1309,
+     "deviationTime": 203,
+     "deviationPoint": {
+      "latitude": 41.87563,
+      "longitude": -87.64225
+     }
+    },
+    "legs": [
+     {
+      "summary": {
+       "lengthInMeters": 2131791,
+       "travelTimeInSeconds": 67867,
+       "trafficDelayInSeconds": 0,
+       "trafficLengthInMeters": 0,
+       "departureTime": "2026-11-02T02:00:00-06:00",
+       "arrivalTime": "2026-11-02T19:51:07-07:00",
+       "noTrafficTravelTimeInSeconds": 67548,
+       "historicTrafficTravelTimeInSeconds": 67872,
+       "liveTrafficIncidentsTravelTimeInSeconds": 67867
+      },
+      "encodedPolyline": "cir~FbezuOnBEVAjBAN?hA?RAr@?^Ah@A?fEB`C@jA?tD@tA?tBC`GAN?L?VA|B?N?P?^@d@?vA@pA@hBD`I?t@?tD?tA?l@@tB?zAGTAHAFA\\?`DAdBEf@A...[50627 chars]",
+      "encodedPolylinePrecision": 5
+     }
+    ],
+    "sections": [
+     {
+      "startPointIndex": 15,
+      "endPointIndex": 9913,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 12998,
+      "endPointIndex": 14913,
+      "sectionType": "MOTORWAY"
+     },
+     {
+      "startPointIndex": 0,
+      "endPointIndex": 15015,
+      "sectionType": "TRAVEL_MODE",
+      "travelMode": "truck"
+     },
+     {
+      "startPointIndex": 15015,
+      "endPointIndex": 15022,
+      "sectionType": "TRAVEL_MODE",
+      "travelMode": "other"
+     }
+    ],
+    "guidance": {
+     "instructions": [
+      {
+       "routeOffsetInMeters": 0,
+       "travelTimeInSeconds": 0,
+       "point": {
+        "latitude": 41.8781,
+        "longitude": -87.62978
+       },
+       "pointIndex": 0,
+       "instructionType": "LOCATION_DEPARTURE",
+       "street": "S Federal St",
+       "countryCode": "USA",
+       "stateCode": "IL",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "DEPART"
+      },
+      {
+       "routeOffsetInMeters": 267,
+       "travelTimeInSeconds": 82,
+       "point": {
+        "latitude": 41.8757,
+        "longitude": -87.6297
+       },
+       "pointIndex": 9,
+       "instructionType": "TURN",
+       "street": "W Ida B. Wells Dr",
+       "countryCode": "USA",
+       "stateCode": "IL",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": 90,
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "TURN_RIGHT"
+      },
+      {
+       "routeOffsetInMeters": 1168,
+       "travelTimeInSeconds": 193,
+       "point": {
+        "latitude": 41.87564,
+        "longitude": -87.64054
+       },
+       "pointIndex": 30,
+       "instructionType": "TURN",
+       "roadNumbers": [
+        "I-290 W"
+       ],
+       "street": "Interstate Highway 290 W",
+       "countryCode": "USA",
+       "stateCode": "IL",
+       "junctionType": "BIFURCATION",
+       "turnAngleInDecimalDegrees": -45,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "KEEP_LEFT"
+      },
+      {
+       "routeOffsetInMeters": 1309,
+       "travelTimeInSeconds": 203,
+       "point": {
+        "latitude": 41.87563,
+        "longitude": -87.64225
+       },
+       "pointIndex": 34,
+       "instructionType": "TURN",
+       "roadNumbers": [
+        "I-90 W",
+        "I-94 W"
+       ],
+       "street": "Interstate Highway 94 W",
+       "countryCode": "USA",
+       "stateCode": "IL",
+       "signpostText": "Indiana",
+       "junctionType": "REGULAR",
+       "turnAngleInDecimalDegrees": 45,
+       "possibleCombineWithNext": true,
+       "drivingSide": "RIGHT",
+       "maneuver": "MOTORWAY_EXIT_RIGHT"
+      },
+      "...[58 instructions]",
+      {
+       "routeOffsetInMeters": 2131701,
+       "travelTimeInSeconds": 67840,
+       "point": {
+        "latitude": 39.74,
+        "longitude": -104.99034
+       },
+       "pointIndex": 15015,
+       "instructionType": "LOCATION_ARRIVAL",
+       "street": "N Bannock St",
+       "countryCode": "USA",
+       "stateCode": "CO",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "ARRIVE"
+      },
+      {
+       "routeOffsetInMeters": 2131791,
+       "travelTimeInSeconds": 67867,
+       "point": {
+        "latitude": 39.7392,
+        "longitude": -104.99027
+       },
+       "pointIndex": 15022,
+       "instructionType": "LOCATION_ARRIVAL",
+       "street": "N Bannock St",
+       "countryCode": "USA",
+       "stateCode": "CO",
+       "possibleCombineWithNext": false,
+       "drivingSide": "RIGHT",
+       "maneuver": "ARRIVE"
+      }
+     ],
+     "instructionGroups": [
+      {
+       "firstInstructionIndex": 0,
+       "lastInstructionIndex": 1,
+       "groupLengthInMeters": 1168
+      },
+      {
+       "firstInstructionIndex": 2,
+       "lastInstructionIndex": 21,
+       "groupLengthInMeters": 1459568
+      },
+      {
+       "firstInstructionIndex": 22,
+       "lastInstructionIndex": 28,
+       "groupLengthInMeters": 161225
+      },
+      {
+       "firstInstructionIndex": 29,
+       "lastInstructionIndex": 32,
+       "groupLengthInMeters": 127821
+      },
+      {
+       "firstInstructionIndex": 33,
+       "lastInstructionIndex": 57,
+       "groupLengthInMeters": 382009
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

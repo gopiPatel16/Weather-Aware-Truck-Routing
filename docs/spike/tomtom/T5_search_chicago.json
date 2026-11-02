@@ -1,0 +1,282 @@
+{
+ "summary": {
+  "query": "chicago",
+  "queryType": "NON_NEAR",
+  "queryTime": 39,
+  "numResults": 5,
+  "offset": 0,
+  "totalResults": 100,
+  "fuzzyLevel": 1,
+  "queryIntent": []
+ },
+ "results": [
+  {
+   "type": "Geography",
+   "id": "KGdN5SaiPg8N_KCGUOyGcg",
+   "score": 2.872004509,
+   "entityType": "Municipality",
+   "address": {
+    "municipality": "Chicago",
+    "countrySubdivision": "IL",
+    "countrySubdivisionName": "Illinois",
+    "countrySubdivisionCode": "IL",
+    "countryCode": "US",
+    "country": "United States",
+    "countryCodeISO3": "USA",
+    "freeformAddress": "Chicago, IL"
+   },
+   "position": {
+    "lat": 41.883229,
+    "lon": -87.632398
+   },
+   "viewport": {
+    "topLeftPoint": {
+     "lat": 42.02311,
+     "lon": -87.94003
+    },
+    "btmRightPoint": {
+     "lat": 41.64454,
+     "lon": -87.52366
+    }
+   },
+   "boundingBox": {
+    "topLeftPoint": {
+     "lat": 42.023105,
+     "lon": -87.940025
+    },
+    "btmRightPoint": {
+     "lat": 41.644541,
+     "lon": -87.523661
+    }
+   },
+   "dataSources": {
+    "geometry": {
+     "id": "e96896ae-b90e-4bd1-b14a-f3343b8619e3"
+    }
+   }
+  },
+  {
+   "type": "POI",
+   "id": "l1ia9bfIWvoHVWbNBoQiVA",
+   "score": 2.5725040436,
+   "info": "search:ta:840178000304492-US",
+   "poi": {
+    "name": "Lincoln (Abraham) Park",
+    "phone": "+1 312-742-7726",
+    "brands": [
+     {
+      "name": "Chicago Park District"
+     }
+    ],
+    "categorySet": [
+     {
+      "id": 9362008
+     }
+    ],
+    "url": "www.chicagoparkdistrict.com/parks/lincoln-park/",
+    "categories": [
+     "park",
+     "park recreation area"
+    ],
+    "classifications": [
+     {
+      "code": "PARK_RECREATION_AREA",
+      "names": [
+       {
+        "nameLocale": "en-US",
+        "name": "park recreation area"
+       },
+       {
+        "nameLocale": "en-US",
+        "name": "park"
+       }
+      ]
+     }
+    ]
+   },
+   "address": {
+    "streetName": "N Lake Shore Dr",
+    "municipality": "Chicago",
+    "neighbourhood": "Lincoln Park",
+    "countrySecondarySubdivision": "Cook",
+    "countrySubdivision": "IL",
+    "countrySubdivisionName": "Illinois",
+    "countrySubdivisionCode": "IL",
+    "postalCode": "60614",
+    "countryCode": "US",
+    "country": "United States",
+    "countryCodeISO3": "USA",
+    "freeformAddress": "N Lake Shore Dr, Chicago, IL 60614",
+    "localName": "Chicago"
+   },
+   "position": {
+    "lat": 41.91536,
+    "lon": -87.63139
+   },
+   "viewport": {
+    "topLeftPoint": {
+     "lat": 41.91848,
+     "lon": -87.63558
+    },
+    "btmRightPoint": {
+     "lat": 41.91224,
+     "lon": -87.6272
+    }
+   },
+   "entryPoints": [
+    {
+     "type": "minor",
+     "position": {
+      "lat": 41.91477,
+      "lon": -87.63244
+     }
+    },
+    {
+     "type": "main",
+     "position": {
+      "lat": 41.91434,
+      "lon": -87.62743
+     }
+    }
+   ]
+  },
+  {
+   "type": "Geography",
+   "id": "Jv5blrQ-VHK28lfEIJ7ewA",
+   "score": 2.5424559116,
+   "entityType": "Municipality",
+   "address": {
+    "municipality": "Chicago",
+    "countrySecondarySubdivision": "Stutsman",
+    "countrySubdivision": "ND",
+    "countrySubdivisionName": "North Dakota",
+    "countrySubdivisionCode": "ND",
+    "countryCode": "US",
+    "country": "United States",
+    "countryCodeISO3": "USA",
+    "freeformAddress": "Chicago, ND"
+   },
+   "position": {
+    "lat": 46.862755,
+    "lon": -99.237015
+   },
+   "viewport": {
+    "topLeftPoint": {
+     "lat": 46.89268,
+     "lon": -99.32138
+    },
+    "btmRightPoint": {
+     "lat": 46.80455,
+     "lon": -99.19423
+    }
+   },
+   "boundingBox": {
+    "topLeftPoint": {
+     "lat": 46.892678,
+     "lon": -99.321384
+    },
+    "btmRightPoint": {
+     "lat": 46.804546,
+     "lon": -99.194228
+    }
+   },
+   "dataSources": {
+    "geometry": {
+     "id": "00005858-5800-1200-0000-00007d2bdb62"
+    }
+   }
+  },
+  {
+   "type": "Geography",
+   "id": "51iAEZTfcnX2QliYEwHEGw",
+   "score": 2.5296680927,
+   "entityType": "Municipality",
+   "address": {
+    "municipality": "West Chicago",
+    "countrySecondarySubdivision": "DuPage",
+    "countrySubdivision": "IL",
+    "countrySubdivisionName": "Illinois",
+    "countrySubdivisionCode": "IL",
+    "countryCode": "US",
+    "country": "United States",
+    "countryCodeISO3": "USA",
+    "freeformAddress": "West Chicago, IL"
+   },
+   "position": {
+    "lat": 41.884657,
+    "lon": -88.204903
+   },
+   "viewport": {
+    "topLeftPoint": {
+     "lat": 41.93729,
+     "lon": -88.26268
+    },
+    "btmRightPoint": {
+     "lat": 41.85041,
+     "lon": -88.17601
+    }
+   },
+   "boundingBox": {
+    "topLeftPoint": {
+     "lat": 41.937292,
+     "lon": -88.262684
+    },
+    "btmRightPoint": {
+     "lat": 41.850413,
+     "lon": -88.176014
+    }
+   },
+   "dataSources": {
+    "geometry": {
+     "id": "00005549-3100-3c00-0000-000059699b7b"
+    }
+   }
+  },
+  {
+   "type": "Geography",
+   "id": "voJXkiZAbI5kl7ItmrDQfQ",
+   "score": 2.5293734074,
+   "entityType": "Municipality",
+   "address": {
+    "municipality": "Chicago Heights",
+    "countrySecondarySubdivision": "Cook",
+    "countrySubdivision": "IL",
+    "countrySubdivisionName": "Illinois",
+    "countrySubdivisionCode": "IL",
+    "countryCode": "US",
+    "country": "United States",
+    "countryCodeISO3": "USA",
+    "freeformAddress": "Chicago Heights, IL"
+   },
+   "position": {
+    "lat": 41.501481,
+    "lon": -87.641605
+   },
+   "viewport": {
+    "topLeftPoint": {
+     "lat": 41.54321,
+     "lon": -87.67442
+    },
+    "btmRightPoint": {
+     "lat": 41.48145,
+     "lon": -87.59682
+    }
+   },
+   "boundingBox": {
+    "topLeftPoint": {
+     "lat": 41.543213,
+     "lon": -87.674421
+    },
+    "btmRightPoint": {
+     "lat": 41.481455,
+     "lon": -87.59682
+    }
+   },
+   "dataSources": {
+    "geometry": {
+     "id": "00005549-3100-3c00-0000-000059685566"
+    }
+   }
+  }
+ ]
+}
