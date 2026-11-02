@@ -84,7 +84,7 @@ Notes:
 
 ## Hosting note
 
-On Render's free tier the service sleeps after 15 minutes idle and the first request after that can take about a minute. No keep-alive trick is required; the app retries transient failures and tells the user what is happening.
+On Render's free tier the service sleeps after 15 minutes idle and the first request after that can take up to about a minute (measured once: 14.5 s). No keep-alive trick is required; the app retries transient failures and tells the user what is happening.
 
 ## Attribution
 

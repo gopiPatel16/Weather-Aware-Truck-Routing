@@ -41,8 +41,21 @@ Server-side timings are the `meta.timings_ms` the API itself reports. Trips were
 | Slider makes no request while scrubbing | 0 | **0**, asserted in `App.test.tsx` and `TimeSlider.test.tsx`; all 49 hours of every cell sit in one `Uint8Array` |
 | Cost of one slider step | well under a frame | The main thread spends **0.2 ms median, 0.4 ms p95, 1.9 ms max** per step (two paint-property swaps on a 585-point source; 196 steps measured in Chromium). Updates are coalesced to at most one per animation frame |
 | Slider/play ≥ 55 fps | measured with a frame probe | **Not measured end to end.** The in-app browser pauses animation frames while its pane is hidden, so a frame-time probe could not run. The per-step cost above leaves most of the 16.7 ms frame budget free; please confirm by eye or with the browser's Performance panel |
-| Lighthouse ≥ 90 | measured | **Not run** (no Lighthouse available in this environment) |
+| Lighthouse ≥ 90 (desktop, hosted page) | measured | **Performance 78 (target not met)**, Accessibility 100, Best practices 100. FCP 0.6 s, LCP 0.6 s, CLS 0.003, speed index 1.8 s, total blocking time 420 ms. The blocking time is almost entirely evaluating the MapLibre bundle (about 0.7 s of scripting, one 390 ms task), which the map needs to draw anything; the app's own script is 70 ms. Not tuned further |
 
 ## Provider limits seen in practice
 
 Open-Meteo's free tier allows about 600 locations per minute per IP, and every checkpoint and heatmap cell counts as one. Two to three plans at a 10-mile interval inside a minute exceeded it; the API then answered HTTP 429 for some chunks. The app's behaviour was correct and honest: the affected checkpoints became **Unknown**, coverage dropped below 100 %, the banner said "A safe recommendation cannot be determined", and when every chunk failed the API returned 502 `weather_unavailable` with `retry_after_s`. Results are cached for 30 minutes, which makes repeat requests free.
+
+## Hosted app (Render free tier), 2 Nov 2026
+
+URL: https://weather-aware-truck-routing-l7mt.onrender.com
+
+| Check | Result |
+|---|---|
+| `/api/health/` | 200, about 0.9 s |
+| `GET /api/geocode?q=Chicago` | TomTom suggestions with time zones |
+| `POST /api/plan` Chicago → Denver, 25 mi | 3 routes, `route_guidance` ETAs, 100 % coverage, **6.5 s** end to end (routing 3.4 s, weather 0.9 s) |
+| `POST /api/heatmap` for that plan | 585 cells, 0 Unknown, 54 KB, **14–19 s** (weather 6–8 s; the free instance has a fraction of a CPU, so the pure-Python risk pass for 585 × 49 values is the rest). The slider card shows "Loading forecast overview…" meanwhile and the routes are usable |
+| Browser, real data | form → recommendation banner → three route cards with real Severe/High miles |
+| **Cold start** (17 min with no traffic, then one request) | First request **200 in 14.5 s** (the app page), next request 0.9 s. Render's documentation says up to about a minute; 14.5 s was measured once |
