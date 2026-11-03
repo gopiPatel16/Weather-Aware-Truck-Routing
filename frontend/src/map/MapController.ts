@@ -511,11 +511,15 @@ export class MapController {
       const route = this.routes.find((r) => r.id === routeId);
       const cp: Checkpoint | undefined = route?.checkpoints.find((c) => c.i === index);
       if (!route || !cp) return;
+      // On tall maps open the popup above the marker, and sit the marker below centre so the popup fits
+      // above it without running under the slider card.
+      const tall = this.map.getContainer().clientHeight > 600;
       this.popup = new this.ml.Popup({
         offset: 16,
         maxWidth: '300px',
         closeButton: true,
         focusAfterOpen: false,
+        ...(tall ? { anchor: 'bottom' as const } : {}),
       })
         .setLngLat([cp.lon, cp.lat])
         .setDOMContent(buildCheckpointPopup(route, cp, this.departureUtc))
@@ -523,7 +527,11 @@ export class MapController {
       this.popup.on('close', () => {
         if (!this.suppressPopupClose) this.callbacks.onPopupClose();
       });
-      if (flyTo) this.map.easeTo({ center: [cp.lon, cp.lat], duration: 500 });
+      this.map.easeTo({
+        center: [cp.lon, cp.lat],
+        duration: flyTo ? 500 : 350,
+        offset: [0, tall ? 130 : 0],
+      });
     });
   }
 
