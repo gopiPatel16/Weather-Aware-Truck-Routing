@@ -1,7 +1,6 @@
 import { useCallback, useMemo, useState, type ReactNode } from 'react';
 import type { PlanRequest, Route } from './api/types';
 import { CheckpointTable } from './components/CheckpointTable';
-import { Footer } from './components/Footer';
 import { HeatmapPanel } from './components/HeatmapPanel';
 import { Legend } from './components/Legend';
 import { MapView, type SelectedCheckpoint } from './components/MapView';
@@ -279,8 +278,6 @@ export default function App({ initialTrip, devTools }: Props) {
                 onSelect={onTableCheckpoint}
               />
             ) : null}
-
-            <Footer />
           </div>
         </aside>
       </div>

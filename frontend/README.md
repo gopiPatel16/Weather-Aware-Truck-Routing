@@ -68,7 +68,7 @@ production bundles.
 api/         types.ts (PLAN §7) · client.ts (typed fetch + AbortController) · retry.ts (2/5/10 s) · errors.ts
 state/       usePlanner (plan request, retry state) · useHeatmap (one heatmap request per plan)
 components/  TripForm, PlaceInput (combobox), RecommendationBanner, PlanNotices, RouteCard, RiskStrip,
-             CheckpointTable, RulesDrawer, HeatmapPanel, TimeSlider, Legend, MapView, StatusPanels, Footer
+             CheckpointTable, RulesDrawer, HeatmapPanel, TimeSlider, Legend, MapView, StatusPanels
 map/         MapController.ts (lifecycle wrapper: sources, layers, markers, popup, rAF-coalesced hour updates),
              sources.ts (GeoJSON builders), popup.ts (DOM-built popup), geometry.ts
 utils/       format (Intl time-zone formatting), risk (levels, colours, glyphs, heat weights), validation, time,
